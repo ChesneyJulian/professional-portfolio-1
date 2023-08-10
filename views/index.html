@@ -5,12 +5,13 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Chesney Julian Web Developer</title>
   <link rel="stylesheet" type="text/css" href="/css/style.css" />
+  <script>document.documentElement.classList.add('js')</script>
 </head>
 <body class="min-h-screen bg-blend-screen bg-gray-900">
   <main>
-    <div id="header" class="relative isolate overflow-hidden bg-gray-900 py-24 sm:py-32 min-h-screen">
+    <div id="header" class="relative isolate bg-gradient-to-bl from-[gray-900] via-[gray-900] overflow-hidden py-24 sm:py-32 min-h-screen">
       <div class="hidden sm:absolute sm:-top-10 sm:right-1/2 sm:-z-10 sm:mr-10 sm:block sm:transform-gpu sm:blur-3xl" aria-hidden="true">
-        <div class="aspect-[1200/900] w-[68.5625rem] bg-gradient-to-tr from-[#AF41ED] to-[#E713B0] opacity-40" style="clip-path: polygon(74.1% 44.1%, 100% 61.6%, 97.5% 26.9%, 85.5% 0.1%, 80.7% 2%, 72.5% 32.5%, 60.2% 62.4%, 52.4% 68.1%, 47.5% 58.3%, 45.2% 34.5%, 27.5% 76.7%, 0.1% 64.9%, 17.9% 100%, 27.6% 76.8%, 76.1% 97.7%, 74.1% 44.1%)"></div>
+        <div class="aspect-[1200/900] w-[68.5625rem] bg-gradient-to-tr from-[#AF41ED] to-[#E713B0] via-[#E713B0] opacity-40" style="clip-path: polygon(74.1% 44.1%, 100% 61.6%, 97.5% 26.9%, 85.5% 0.1%, 80.7% 2%, 72.5% 32.5%, 60.2% 62.4%, 52.4% 68.1%, 47.5% 58.3%, 45.2% 34.5%, 27.5% 76.7%, 0.1% 64.9%, 17.9% 100%, 27.6% 76.8%, 76.1% 97.7%, 74.1% 44.1%)"></div>
       </div>
       <div class="absolute -top-52 left-1/2 -z-10 -translate-x-1/2 transform-gpu blur-3xl sm:top-[-28rem] sm:ml-16 sm:translate-x-0 sm:transform-gpu" aria-hidden="true">
         <div class="aspect-[1200/900] w-[68.5625rem] bg-gradient-to-tr from-[#AF41ED] to-[#E713B0] opacity-40" style="clip-path: polygon(74.1% 44.1%, 100% 61.6%, 97.5% 26.9%, 85.5% 0.1%, 80.7% 2%, 72.5% 32.5%, 60.2% 62.4%, 52.4% 68.1%, 47.5% 58.3%, 45.2% 34.5%, 27.5% 76.7%, 0.1% 64.9%, 17.9% 100%, 27.6% 76.8%, 76.1% 97.7%, 74.1% 44.1%)"></div>
@@ -31,9 +32,18 @@
       </div>
     </div>
 
-    <aside id="sidebar" class="fixed top-0 right-0 z-40 w-64 h-screen transition-transform -translate-x-full sm:translate-x-0" aria-label="Sidebar">
-      <div class="h-screen px-3 py-4 overflow-y-auto">
+    <aside id="sidebar" style="display:none;" data-taos-offset="400" class="aos item fixed top-0 right-0 z-40 w-64 h-screen" aria-label="Sidebar">
+      <div class="flex flex-col justify-center h-screen px-3 py-4 overflow-y-auto">
+        <img class="rounded-full w-40 h-40 self-center" src="/images/profile-img.jpeg" alt="image description">
         <h2 class="my-6 text-4xl font-bold tracking-tight text-white sm:text-6xl">Chesney Julian</h2>
+        <ul class="text-base font-semibold leading-7 text-white">
+          <li><a src=''>Contact Me</a></li>
+          <li><a src='#skills'>Skills</a></li>
+          <li><a src='#recent-projects'>Recent Projects</a></li>
+          <li><a src='URL'>GitHub</a></li>
+          <li><a src='URL'>LinkedIn</a></li>
+          <li><a src='URL'>Resume</a></li>
+        </ul>
       </div>
    </aside>
 
@@ -54,5 +64,7 @@
     </div>
     
   </main>
+  <script src="/js/index.js"></script>
+  <script src="https://unpkg.com/taos@1.0.5/dist/taos.js"></script>
 </body>
 </html>
