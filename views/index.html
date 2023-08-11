@@ -7,7 +7,7 @@
   <link rel="stylesheet" type="text/css" href="/css/style.css" />
   <script>document.documentElement.classList.add('js')</script>
 </head>
-<body class="min-h-screen bg-blend-screen bg-gray-900">
+<body class="min-h-screen bg-blend-screen bg-gray-900 text-white leading-7 scroll-smooth">
   <main>
     <div id="header" class="relative isolate bg-gradient-to-bl from-[gray-900] via-[gray-900] overflow-hidden py-24 sm:py-32 min-h-screen">
       <div class="hidden sm:absolute sm:-top-10 sm:right-1/2 sm:-z-10 sm:mr-10 sm:block sm:transform-gpu sm:blur-3xl" aria-hidden="true">
@@ -18,11 +18,11 @@
       </div>
       <div class="mx-auto max-w-7xl px-6 lg:px-8">
         <div class="mx-auto max-w-2xl lg:mx-0">
-          <h2 class="my-6 text-4xl font-bold tracking-tight text-white sm:text-6xl">Chesney Julian</h2>
-          <h2 class="my-6 text-4xl font-bold tracking-tight text-white sm:text-6xl">Full Stack Web Developer</h2>
+          <h2 class="my-6 text-4xl font-bold tracking-tight sm:text-6xl">Chesney Julian</h2>
+          <h2 class="my-6 text-4xl font-bold tracking-tight sm:text-6xl">Full Stack Web Developer</h2>
         </div>
         <div class="mx-auto mt-20 max-w-2xl lg:mx-0 lg:max-w-none">
-          <div class="my-6 grid grid-cols-1 gap-x-8 gap-y-6 text-base font-semibold leading-7 text-white sm:grid-cols-2 md:flex lg:gap-x-10">
+          <div class="my-6 grid grid-cols-1 gap-x-8 gap-y-6 text-base font-semibold sm:grid-cols-2 md:flex lg:gap-x-10">
             <a href="#about-me">About Me <span aria-hidden="true">&rarr;</span></a>
             <a href="#skills">Skills <span aria-hidden="true">&rarr;</span></a>
             <a href="#">Recent Projects <span aria-hidden="true">&rarr;</span></a>
@@ -32,11 +32,11 @@
       </div>
     </div>
 
-    <aside id="sidebar" style="display:none;" data-taos-offset="400" class="aos item fixed top-0 right-0 z-40 w-64 h-screen" aria-label="Sidebar">
-      <div class="flex flex-col justify-center h-screen px-3 py-4 overflow-y-auto">
+    <aside id="sidebar" style="display:none;" data-taos-offset="400" class="aos item fixed top-0 md:right-0 sm:w-40 md:w-64 h-screen" aria-label="Sidebar">
+      <div class="flex flex-col text-left justify-center h-screen px-3 py-4 overflow-y-auto">
         <img class="rounded-full w-40 h-40 self-center" src="/images/profile-img.jpeg" alt="image description">
-        <h2 class="my-6 text-4xl font-bold tracking-tight text-white sm:text-6xl">Chesney Julian</h2>
-        <ul class="text-base font-semibold leading-7 text-white">
+        <h2 class="my-6 lg:text-4xl md:text-2xl font-bold tracking-tight text-white">Chesney Julian</h2>
+        <ul class="text-base font-semibold  text-white">
           <li><a src=''>Contact Me</a></li>
           <li><a src='#skills'>Skills</a></li>
           <li><a src='#recent-projects'>Recent Projects</a></li>
@@ -50,16 +50,50 @@
     <div class="min-h-screen flex flex-col justify-between p-12">
       <div id="about-me" class="flex flex-col container mb-32 mx-auto max-w-7xl p-6 lg:p-8">
         <h3 class="font-bold text-3xl sm:text-5xl tracking-tight text-white">About Me</h3>
-        <p class="my-10 ml-16 font-medium text-xl sm:text-2xl text-white max-w-2xl">This is a paragraph all about me. I build websites and things. Looks good to me what do you think? Let me know below. Here's some more text to take up some room. Isn't this fun? I think so.</p>
+        <p class="my-10 ml-16 font-medium text-xl sm:text-2xl max-w-2xl">This is a paragraph all about me. I build websites and things. Looks good to me what do you think? Let me know below. Here's some more text to take up some room. Isn't this fun? I think so.</p>
       </div>
       
       <div id="skills" class="flex flex-col container mb-32 mx-auto max-w-7xl p-6 lg:p-8">
         <h3 class="font-bold text-3xl sm:text-5xl tracking-tight text-white">Skills</h3>
-        <p class="my-10 ml-16 font-medium text-xl sm:text-2xl text-white max-w-2xl">This is a paragraph all about my skills. I know many languages and frameworks. Looks good to me what do you think? Let me know below. Here's some more text to take up some room. Isn't this fun? I think so.</p>
+        <p class="my-10 ml-16 font-medium text-xl sm:text-2xl max-w-2xl">This is a paragraph all about my skills. I know many languages and frameworks. Looks good to me what do you think? Let me know below. Here's some more text to take up some room. Isn't this fun? I think so.</p>
       </div>
 
-      <div id="recent-projects" class="flex flex-col items-center container mx-auto max-w-7xl p-6 lg:p-8">
-        <h3 class="font-bold text-3xl sm:text-5xl tracking-tight text-white">Recent Projects</h3>
+      <div id="recent-projects" class="container mx-auto max-w-7xl p-6 lg:p-8">
+        <h3 class="font-bold text-3xl sm:text-5xl tracking-tight text-white mb-8">Recent Projects</h3>
+
+        <snap class="snap-y mr-20">
+          <div class="max-w-sm w-full mb-8 lg:max-w-full lg:flex lg:h-75">
+            <div class="h-48 lg:h-auto lg:w-48 flex-none bg-cover rounded-t lg:rounded-t-none lg:rounded-l text-center overflow-hidden" style="background-image: url('/images/night-in-generator.png')" title="Night-In Generator Application">
+            </div>
+            <div class="bg-gray-800 rounded-b lg:rounded-b-none lg:rounded-r p-4 flex flex-col justify-between leading-normal">
+              <div>
+                <div class="font-bold text-xl mb-2">Night-In Generator</div>
+                <p class="text-base "> A collaborative project with the goal of providing users with meal, drink, and movie options to diminish the stress of planning a night at home.<br/> Languages and technologies used in this project include HTML, JavaScript, Bootstrap CSS, Local Storage, and server-side APIs.<br/> Skills displayed include collaborative work, version control, data rendering from APIs, and responsive web design.</p>
+              </div>
+              <div class="px-6 pt-4 pb-2 grid-cols-2">
+                <span class="inline-block bg-purple rounded-full px-3 py-1 text-sm font-semibold mr-2 mb-2"><a target="_blank" href="https://github.com/cdgonzo23/night-in-generator">GitHub Repository</a></span>
+                <span class="inline-block bg-purple rounded-full px-3 py-1 text-sm font-semibold mr-2 mb-2"><a target="_blank" href="https://cdgonzo23.github.io/night-in-generator/">Visit Night-In Generator</a></span>
+              </div>
+            </div>
+          </div>
+
+          <div class="max-w-sm w-full mb-8 lg:max-w-full lg:flex lg:h-75">
+            <div class="h-48 lg:h-auto lg:w-48 flex-none bg-cover rounded-t lg:rounded-t-none lg:rounded-l text-center overflow-hidden" style="background-image: url('/images/maintenance-manatee.png')" title="Night-In Generator Application">
+            </div>
+            <div class="bg-gray-800 rounded-b lg:rounded-b-none lg:rounded-r p-4 flex flex-col justify-between leading-normal">
+              <div>
+                <div class="font-bold text-xl mb-2">Maintenance Manatee</div>
+                <p class="text-base ">Keeping track of your vehicle's maintenance in one clean, simple app.<br/> Languages and technologies used in this project include HTML, JavaScript, Tailwind CSS, Node.js, Express.js, MySQL2, express-session, and Handlebars.js. App is deployed using Heroku.<br/> Skills displayed include collaborative work, version control, MVC frameworks, user-session-storage, database building, and responsive web design.</p>
+              </div>
+              <div class="px-6 pt-4 pb-2 grid-cols-2">
+                <span class="inline-block bg-purple rounded-full px-3 py-1 text-sm font-semibold mr-2 mb-2"><a target="_blank" href="https://github.com/cdgonzo23/maintenance-manatee">GitHub Repository</a></span>
+                <span class="inline-block bg-purple rounded-full px-3 py-1 text-sm font-semibold mr-2 mb-2"><a target="_blank" href="https://maintenance-manatee-20230807-e071f072b462.herokuapp.com/">Visit Maintenance Manatee</a></span>
+              </div>
+            </div>
+          </div>
+
+         
+        </snap>
       </div>
     </div>
     

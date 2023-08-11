@@ -1,3 +1,8 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.fade-out {
+  transition-duration: 300ms;
+  transform: translate(100%);
+}
