@@ -6,3 +6,11 @@
   transition-duration: 300ms;
   transform: translate(100%);
 }
+
+.overlay {
+  background: rgba(0, 0, 0, 0.5); 
+  color: #f1f1f1;
+  width: 100%;
+  color: white;
+  font-size: 20px;
+}
