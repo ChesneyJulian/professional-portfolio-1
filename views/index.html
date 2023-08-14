@@ -7,16 +7,16 @@
   <link rel="stylesheet" type="text/css" href="/css/style.css" />
   <script>document.documentElement.classList.add('js')</script>
 </head>
-<body class="min-h-screen bg-blend-screen bg-gray-900 text-white leading-7 scroll-smooth">
-  <main>
-    <div id="header" class="relative isolate bg-gradient-to-bl from-[gray-900] via-[gray-900] overflow-hidden py-24 sm:py-32 min-h-screen">
+<body class="max-h-screen max-w-screen bg-blend-screen bg-gray-900 text-white leading-7 scroll-smooth">
+  <main class="flex flex-row justify-evenly">
+    <div id="header" class="isolate bg-gradient-to-bl from-[gray-900] via-[gray-900] overflow-hidden py-24 sm:py-32 min-h-screen">
       <div class="hidden sm:absolute sm:-top-10 sm:right-1/2 sm:-z-10 sm:mr-10 sm:block sm:transform-gpu sm:blur-3xl" aria-hidden="true">
         <div class="aspect-[1200/900] w-[68.5625rem] bg-gradient-to-tr from-[#AF41ED] to-[#E713B0] via-[#E713B0] opacity-40" style="clip-path: polygon(74.1% 44.1%, 100% 61.6%, 97.5% 26.9%, 85.5% 0.1%, 80.7% 2%, 72.5% 32.5%, 60.2% 62.4%, 52.4% 68.1%, 47.5% 58.3%, 45.2% 34.5%, 27.5% 76.7%, 0.1% 64.9%, 17.9% 100%, 27.6% 76.8%, 76.1% 97.7%, 74.1% 44.1%)"></div>
       </div>
       <div class="absolute -top-52 left-1/2 -z-10 -translate-x-1/2 transform-gpu blur-3xl sm:top-[-28rem] sm:ml-16 sm:translate-x-0 sm:transform-gpu" aria-hidden="true">
         <div class="aspect-[1200/900] w-[68.5625rem] bg-gradient-to-tr from-[#AF41ED] to-[#E713B0] opacity-40" style="clip-path: polygon(74.1% 44.1%, 100% 61.6%, 97.5% 26.9%, 85.5% 0.1%, 80.7% 2%, 72.5% 32.5%, 60.2% 62.4%, 52.4% 68.1%, 47.5% 58.3%, 45.2% 34.5%, 27.5% 76.7%, 0.1% 64.9%, 17.9% 100%, 27.6% 76.8%, 76.1% 97.7%, 74.1% 44.1%)"></div>
       </div>
-      <div class="mx-auto max-w-7xl px-6 lg:px-8">
+      <div class="mx-auto max-w-xl px-6 lg:px-8">
         <div class="mx-auto max-w-2xl lg:mx-0">
           <h2 class="my-6 text-4xl font-bold tracking-tight sm:text-6xl">Chesney Julian</h2>
           <h2 class="my-6 text-4xl font-bold tracking-tight sm:text-6xl">Full Stack Web Developer</h2>
@@ -25,14 +25,37 @@
           <div class="my-6 grid grid-cols-1 gap-x-8 gap-y-6 text-base font-semibold sm:grid-cols-2 md:flex lg:gap-x-10">
             <a href="#about-me">About Me <span aria-hidden="true">&rarr;</span></a>
             <a href="#skills">Skills <span aria-hidden="true">&rarr;</span></a>
-            <a href="#">Recent Projects <span aria-hidden="true">&rarr;</span></a>
+            <a href="#recent-projects">Recent Projects <span aria-hidden="true">&rarr;</span></a>
             <a href="#">Contact Me <span aria-hidden="true">&rarr;</span></a>
           </div>
         </div>
       </div>
     </div>
 
-    <aside id="sidebar" style="display:none;" data-taos-offset="400" class="aos item fixed top-0 md:right-0 sm:w-40 md:w-64 h-screen" aria-label="Sidebar">
+
+      <div class="min-h-screen flex flex-col justify-between p-12 h-screen scroll-smooth overflow-y-auto no-scrollbar">
+        <div id="about-me" class="flex flex-col container mb-32 mx-auto max-w-7xl p-6 lg:p-8">
+          <h3 class="font-bold text-2xl sm:text-5xl tracking-tight text-white">Hello</h3>
+          <p class="my-10 ml-16 font-medium text-xl sm:text-2xl max-w-2xl">This is a paragraph all about me. I build websites and things. Looks good to me what do you think? Let me know below. Here's some more text to take up some room. Isn't this fun? I think so.</p>
+        </div>
+        <div id="skills" class="flex flex-col container mb-32 mx-auto max-w-7xl p-6 lg:p-8">
+          <h3 class="font-bold text-2xl sm:text-5xl tracking-tight text-white">Skills</h3>
+          <p class="my-10 ml-16 font-medium text-xl sm:text-2xl max-w-2xl">This is a paragraph all about my skills. I know many languages and frameworks. Looks good to me what do you think? Let me know below. Here's some more text to take up some room. Isn't this fun? I think so.</p>
+        </div>
+        <div id="recent-projects" class="container mx-auto max-w-7xl p-6 lg:p-8">
+          <h3 class="font-bold text-2xl sm:text-5xl tracking-tight text-white mb-8">Recent Projects</h3>
+          <div class="flex flex-row">
+            <div>
+              <div class="relative z-10"><img src="/images/maintenance-manatee.png" class="transform duration-300 hover:scale-125 h-64 w-auto rounded aspect-square z-20"></div>
+              <div class="bg-indigo-700 h-64 w-64 rounded-full relative -top-36 left-20"></div>
+            </div>
+            <h5 class="self-start m-12 text-3xl transform duration-300 hover:scale-110">Maintenance Manatee</h5>
+          </div>
+        </div>
+      </div>
+        
+
+    <!-- <aside id="sidebar" style="display:none;" data-taos-offset="400" class="aos item fixed top-0 md:right-0 sm:w-40 md:w-64 h-screen" aria-label="Sidebar">
       <div class="flex flex-col text-left justify-center h-screen px-3 py-4 overflow-y-auto">
         <img class="rounded-full w-40 h-40 self-center" src="/images/profile-img.jpeg" alt="image description">
         <h2 class="my-6 lg:text-4xl md:text-2xl font-bold tracking-tight text-white">Chesney Julian</h2>
@@ -45,87 +68,7 @@
           <li><a src='URL'>Resume</a></li>
         </ul>
       </div>
-   </aside>
-
-    <div class="min-h-screen flex flex-col justify-between p-12">
-      <div id="about-me" class="flex flex-col container mb-32 mx-auto max-w-7xl p-6 lg:p-8">
-        <h3 class="font-bold text-3xl sm:text-5xl tracking-tight text-white">About Me</h3>
-        <p class="my-10 ml-16 font-medium text-xl sm:text-2xl max-w-2xl">This is a paragraph all about me. I build websites and things. Looks good to me what do you think? Let me know below. Here's some more text to take up some room. Isn't this fun? I think so.</p>
-      </div>
-      
-      <div id="skills" class="flex flex-col container mb-32 mx-auto max-w-7xl p-6 lg:p-8">
-        <h3 class="font-bold text-3xl sm:text-5xl tracking-tight text-white">Skills</h3>
-        <p class="my-10 ml-16 font-medium text-xl sm:text-2xl max-w-2xl">This is a paragraph all about my skills. I know many languages and frameworks. Looks good to me what do you think? Let me know below. Here's some more text to take up some room. Isn't this fun? I think so.</p>
-      </div>
-
-      <div id="recent-projects" class="container mx-auto max-w-7xl p-6 lg:p-8">
-        <h3 class="font-bold text-3xl sm:text-5xl tracking-tight text-white mb-8">Recent Projects</h3>
-
-        <snap class="snap-y mr-20">
-          <div class="max-w-sm w-full mb-8 lg:max-w-full lg:flex lg:h-75">
-            <div class="h-48 lg:h-auto lg:w-48 flex-none bg-cover rounded-t lg:rounded-t-none lg:rounded-l text-center overflow-hidden" style="background-image: url('/images/night-in-generator.png')" title="Night-In Generator Application">
-            </div>
-            <div class="bg-gray-800 rounded-b lg:rounded-b-none lg:rounded-r p-4 flex flex-col justify-between leading-normal">
-              <div>
-                <div class="font-bold text-xl mb-2">Night-In Generator</div>
-                <p class="text-base "> A collaborative project with the goal of providing users with meal, drink, and movie options to diminish the stress of planning a night at home.<br/> Languages and technologies used in Night-In Generator include HTML, JavaScript, Bootstrap CSS, Local Storage, TheCocktailDB API, TheMealDB API, and OMDb API.<br/> Skills displayed include collaborative work, version control, data rendering from third-party APIs, local storage for access to recent search results, and responsive web design.</p>
-              </div>
-              <div class="px-6 pt-4 pb-2 grid-cols-2">
-                <span class="inline-block bg-purple rounded-full px-3 py-1 text-sm font-semibold mr-2 mb-2"><a target="_blank" href="https://github.com/cdgonzo23/night-in-generator">GitHub Repository</a></span>
-                <span class="inline-block bg-purple rounded-full px-3 py-1 text-sm font-semibold mr-2 mb-2"><a target="_blank" href="https://cdgonzo23.github.io/night-in-generator/">Visit Night-In Generator</a></span>
-              </div>
-            </div>
-          </div>
-
-          <div class="max-w-sm w-full mb-8 lg:max-w-full lg:flex lg:h-75">
-            <div class="h-48 lg:h-auto lg:w-48 flex-none bg-cover rounded-t lg:rounded-t-none lg:rounded-l text-center overflow-hidden" style="background-image: url('/images/maintenance-manatee.png')" title="Night-In Generator Application">
-            </div>
-            <div class="bg-gray-800 rounded-b lg:rounded-b-none lg:rounded-r p-4 flex flex-col justify-between leading-normal">
-              <div>
-                <div class="font-bold text-xl mb-2">Maintenance Manatee</div>
-                <p class="text-base ">Keep track of your vehicle's maintenance in one user-friendly app.<br/> Languages and technologies used in Maintenance Manatee include HTML, JavaScript, Tailwind CSS, Node.js, Express.js, MySQL2, express-session, and Handlebars.js. App is deployed using Heroku.<br/> Skills displayed include creating an application in a collaborative team, version control, adhering code to the MVC paradigm, securing and storing user session data, database building, and responsive web design.</p>
-              </div>
-              <div class="px-6 pt-4 pb-2 grid-cols-2">
-                <span class="inline-block bg-purple rounded-full px-3 py-1 text-sm font-semibold mr-2 mb-2"><a target="_blank" href="https://github.com/cdgonzo23/maintenance-manatee">GitHub Repository</a></span>
-                <span class="inline-block bg-purple rounded-full px-3 py-1 text-sm font-semibold mr-2 mb-2"><a target="_blank" href="https://maintenance-manatee-20230807-e071f072b462.herokuapp.com/">Visit Maintenance Manatee</a></span>
-              </div>
-            </div>
-          </div>
-
-          <div class="max-w-sm w-full mb-8 lg:max-w-full lg:flex lg:h-75">
-            <div class="h-48 lg:h-auto lg:w-48 flex-none bg-cover rounded-t lg:rounded-t-none lg:rounded-l text-center overflow-hidden" style="background-image: url('/images/tech-blog-screenshot.png')" title="Night-In Generator Application">
-            </div>
-            <div class="bg-gray-800 rounded-b lg:rounded-b-none lg:rounded-r p-4 flex flex-col justify-between leading-normal">
-              <div>
-                <div class="font-bold text-xl mb-2">Tech Blog</div>
-                <p class="text-base ">A CMS-style blog site that follows the MVC paradigm.<br/> Languages and technologies used in Tech Blog include HTML, JavaScript, Node.js, Express.js, MySQL2, express-session, dotenv, bcrypt, Pico CSS, and Handlebars.js. App is deployed using Heroku. <br/>Skills displayed include independently creating and executing a blog with a simple and clean UI/UX, constructing a Content Management System, securing user information and session data, and managing a database.</p>
-              </div>
-              <div class="px-6 pt-4 pb-2 grid-cols-2">
-                <span class="inline-block bg-purple rounded-full px-3 py-1 text-sm font-semibold mr-2 mb-2"><a target="_blank" href="https://github.com/ChesneyJulian/tech-blog">GitHub Repository</a></span>
-                <span class="inline-block bg-purple rounded-full px-3 py-1 text-sm font-semibold mr-2 mb-2"><a target="_blank" href="https://mvc-tech-blog-2023-86b27f515ccd.herokuapp.com/">Visit Tech Blog</a></span>
-              </div>
-            </div>
-          </div>
-
-          <div class="h-48 lg:h-64 lg:w-48 aspect-square flex-none bg-cover rounded-t lg:rounded-t-none lg:rounded-l text-center overflow-hidden flex flex-col justify-center" style="background-image: url('/images/weather-dashboard.png')" title="Night-In Generator Application">
-            <div class="overlay font-bold text-xl opacity-100 mb-2 z-20">Weather Dashboard</div>
-          </div>
-        </div>
-        <div class="max-w-sm w-full mb-8 lg:max-w-full lg:flex lg:h-75">
-            <div class="bg-gray-800 rounded-b lg:rounded-b-none lg:rounded-r p-4 flex flex-col justify-between leading-normal">
-              <div>
-                <p class="text-base ">A weather dashboard that displays a searched city's current weather and five day forecast.<br/>Languages and technologies used in Weather Dashboard include HTML, JavaScript, Bootstrap, Local Storage, DayJS, and OpenWeatherMap APIs.<br/>Skills displayed include utilizing Bootstrap themes to create an aesthetic application, fetching and rendering data from third-party APIs, utilizing local storage for accessibility to recent searches, and responsive web design.</p>
-              </div>
-              <div class="px-6 pt-4 pb-2 grid-cols-2">
-                <span class="inline-block bg-purple rounded-full px-3 py-1 text-sm font-semibold mr-2 mb-2"><a target="_blank" href="https://github.com/ChesneyJulian/weather-dashboard">GitHub Repository</a></span>
-                <span class="inline-block bg-purple rounded-full px-3 py-1 text-sm font-semibold mr-2 mb-2"><a target="_blank" href="https://chesneyjulian.github.io/weather-dashboard/">Visit Weather Dashboard</a></span>
-              </div>
-            </div>
-         
-
-        </snap>
-      </div>
-    </div>
+   </aside> -->
     
   </main>
   <script src="/js/index.js"></script>

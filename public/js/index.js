@@ -12,10 +12,6 @@ const myScrollFunc = () => {
   }
 };
 
-const createCardInfo = () => {
-
-}
-
 window.addEventListener("scroll", myScrollFunc);
 
 
