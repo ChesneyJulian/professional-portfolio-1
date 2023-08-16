@@ -1,7 +1,6 @@
 const router = require('express').Router();
 const fs = require('fs');
 const data = require('../data/projects.json');
-const { parse } = require('path');
 
 router.get('/', (req, res) => {
   res.render('landing-page');

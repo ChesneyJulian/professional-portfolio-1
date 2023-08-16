@@ -3,7 +3,7 @@ module.exports = {
   content: {
     relative: true,
     transform: (content) => content.replace(/taos:/g, ''),
-    files: ["./{views,public}/**/*.{html,js}"],
+    files: ["./{views,public}/**/*.{handlebars,js}"],
   },
   theme: {
     extend: {
