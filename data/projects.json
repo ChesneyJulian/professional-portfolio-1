@@ -1,0 +1,34 @@
+{
+  "projects": [
+    {
+      "name": "Maintenance Manatee",
+      "description": "add content",
+      "skills": "add skills"
+    },
+    {
+      "name": "Night-In Generator",
+      "description": "add content",
+      "skills": "add skills"
+    },
+    {
+      "name": "Tech Blog",
+      "description": "add content",
+      "skills": "add skills"
+    },
+    {
+      "name": "E-Commerce Backend",
+      "description": "add content",
+      "skills": "add skills"
+    },
+    {
+      "name": "Professional README.md Generator",
+      "description": "add content",
+      "skills": "add skills"
+    },
+    {
+      "name": "Weather Dashboard",
+      "description": "add content",
+      "skills": "add skills"
+    }
+  ]
+}
