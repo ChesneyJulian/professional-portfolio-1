@@ -1,3 +1,13 @@
-<h1>{{name}}</h1>
-<p>{{description}}</p>
-<p>{{skills}}</p>
+<div class="container flex flex-col min-w-[50%] items-start sm:m-32">
+  <h2 class="my-8 text-3xl font-bold tracking-tight sm:text-5xl">{{name}}</h2>
+  <p class="my-12 font-medium text-l sm:text-xl max-w-2xl">{{description}}</p>
+  <h3 class="my-8 text-xl font-bold tracking-tight sm:text-3xl">Methods</h3>
+  <p class="my-12 font-medium text-l sm:text-xl max-w-2xl">{{methods}}</p>
+  <h3 class="my-8 text-xl font-bold tracking-tight sm:text-3xl">Skills Displayed</h3>
+  <div class="grid my-8 row-auto grid-cols-4 gap-4">
+  {{#each skills as |skill| }}
+  <div class="rounded-full py-2 px-4 bg-fuchsia-700 w-32 text-center">{{skill}}</div>
+  {{/each}}
+  </div>
+</div>
+
