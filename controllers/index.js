@@ -16,9 +16,10 @@ router.get('/projects/:index', (req, res) => {
       const description = parsedData.projects[req.params.index].description;
       const skills = parsedData.projects[req.params.index].skills;
       const methods = parsedData.projects[req.params.index].methods;
-      console.log(methods);
+      const github = parsedData.projects[req.params.index].github;
+      const url = parsedData.projects[req.params.index].url;
 
-      res.render('case-study', {name, description, skills, methods});
+      res.render('case-study', {name, description, skills, methods, github, url});
     }
   });
 })

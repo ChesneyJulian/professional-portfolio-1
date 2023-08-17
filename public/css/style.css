@@ -567,10 +567,6 @@ html.js :where([class*="taos:"]:not(.taos-init)) {
   margin-top: 1.5rem;
   margin-bottom: 1.5rem;
 }
-.my-8 {
-  margin-top: 2rem;
-  margin-bottom: 2rem;
-}
 .mb-32 {
   margin-bottom: 8rem;
 }
@@ -580,6 +576,9 @@ html.js :where([class*="taos:"]:not(.taos-init)) {
 .ml-16 {
   margin-left: 4rem;
 }
+.mt-16 {
+  margin-top: 4rem;
+}
 .mt-20 {
   margin-top: 5rem;
 }
@@ -588,6 +587,9 @@ html.js :where([class*="taos:"]:not(.taos-init)) {
 }
 .mt-8 {
   margin-top: 2rem;
+}
+.mt-24 {
+  margin-top: 6rem;
 }
 .flex {
   display: flex;
@@ -647,6 +649,9 @@ html.js :where([class*="taos:"]:not(.taos-init)) {
 .transform-gpu {
   transform: translate3d(var(--tw-translate-x), var(--tw-translate-y), 0) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
+.scroll-mt-16 {
+  scroll-margin-top: 4rem;
+}
 .grid-cols-1 {
   grid-template-columns: repeat(1, minmax(0, 1fr));
 }
@@ -658,9 +663,6 @@ html.js :where([class*="taos:"]:not(.taos-init)) {
 }
 .flex-col {
   flex-direction: column;
-}
-.items-start {
-  align-items: flex-start;
 }
 .justify-between {
   justify-content: space-between;
@@ -784,16 +786,19 @@ html.js :where([class*="taos:"]:not(.taos-init)) {
   padding-left: 1.5rem;
   padding-right: 1.5rem;
 }
+.py-16 {
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+}
 .py-2 {
   padding-top: 0.5rem;
   padding-bottom: 0.5rem;
 }
-.py-24 {
-  padding-top: 6rem;
-  padding-bottom: 6rem;
-}
 .pb-12 {
   padding-bottom: 3rem;
+}
+.pt-12 {
+  padding-top: 3rem;
 }
 .text-center {
   text-align: center;
@@ -908,16 +913,16 @@ html.js :where([class*="taos:"]:not(.taos-init)) {
     z-index: -10;
   }
 
-  .sm\:m-32 {
-    margin: 8rem;
-  }
-
   .sm\:ml-16 {
     margin-left: 4rem;
   }
 
   .sm\:mr-10 {
     margin-right: 2.5rem;
+  }
+
+  .sm\:mt-24 {
+    margin-top: 6rem;
   }
 
   .sm\:block {
@@ -933,6 +938,10 @@ html.js :where([class*="taos:"]:not(.taos-init)) {
     transform: translate3d(var(--tw-translate-x), var(--tw-translate-y), 0) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
   }
 
+  .sm\:scroll-mt-24 {
+    scroll-margin-top: 6rem;
+  }
+
   .sm\:grid-cols-2 {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
@@ -941,19 +950,14 @@ html.js :where([class*="taos:"]:not(.taos-init)) {
     flex-direction: row;
   }
 
-  .sm\:py-32 {
-    padding-top: 8rem;
-    padding-bottom: 8rem;
+  .sm\:py-24 {
+    padding-top: 6rem;
+    padding-bottom: 6rem;
   }
 
   .sm\:text-2xl {
     font-size: 1.5rem;
     line-height: 2rem;
-  }
-
-  .sm\:text-3xl {
-    font-size: 1.875rem;
-    line-height: 2.25rem;
   }
 
   .sm\:text-5xl {
@@ -964,11 +968,6 @@ html.js :where([class*="taos:"]:not(.taos-init)) {
   .sm\:text-6xl {
     font-size: 3.75rem;
     line-height: 1;
-  }
-
-  .sm\:text-xl {
-    font-size: 1.25rem;
-    line-height: 1.75rem;
   }
 
   .sm\:blur-3xl {
