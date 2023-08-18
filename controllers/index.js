@@ -18,8 +18,9 @@ router.get('/projects/:index', (req, res) => {
       const methods = parsedData.projects[req.params.index].methods;
       const github = parsedData.projects[req.params.index].github;
       const url = parsedData.projects[req.params.index].url;
+      const image = parsedData.projects[req.params.index].image;
 
-      res.render('case-study', {name, description, skills, methods, github, url});
+      res.render('case-study', {name, description, skills, methods, github, url, image});
     }
   });
 })
