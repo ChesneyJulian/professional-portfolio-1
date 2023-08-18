@@ -552,8 +552,16 @@ html.js :where([class*="taos:"]:not(.taos-init)) {
 .row-auto {
   grid-row: auto;
 }
-.m-12 {
-  margin: 3rem;
+.m-4 {
+  margin: 1rem;
+}
+.mx-4 {
+  margin-left: 1rem;
+  margin-right: 1rem;
+}
+.mx-8 {
+  margin-left: 2rem;
+  margin-right: 2rem;
 }
 .mx-auto {
   margin-left: auto;
@@ -570,11 +578,20 @@ html.js :where([class*="taos:"]:not(.taos-init)) {
 .mb-32 {
   margin-bottom: 8rem;
 }
+.mb-36 {
+  margin-bottom: 9rem;
+}
+.mb-4 {
+  margin-bottom: 1rem;
+}
 .mb-8 {
   margin-bottom: 2rem;
 }
 .ml-16 {
   margin-left: 4rem;
+}
+.ml-8 {
+  margin-left: 2rem;
 }
 .mt-16 {
   margin-top: 4rem;
@@ -584,12 +601,6 @@ html.js :where([class*="taos:"]:not(.taos-init)) {
 }
 .mt-8 {
   margin-top: 2rem;
-}
-.mb-20 {
-  margin-bottom: 5rem;
-}
-.mb-16 {
-  margin-bottom: 4rem;
 }
 .flex {
   display: flex;
@@ -612,6 +623,12 @@ html.js :where([class*="taos:"]:not(.taos-init)) {
 .h-64 {
   height: 16rem;
 }
+.h-80 {
+  height: 20rem;
+}
+.h-auto {
+  height: auto;
+}
 .h-screen {
   height: 100vh;
 }
@@ -630,14 +647,14 @@ html.js :where([class*="taos:"]:not(.taos-init)) {
 .w-\[68\.5625rem\] {
   width: 68.5625rem;
 }
-.w-auto {
-  width: auto;
-}
 .min-w-\[50\%\] {
   min-width: 50%;
 }
 .max-w-2xl {
   max-width: 42rem;
+}
+.max-w-full {
+  max-width: 100%;
 }
 .max-w-xl {
   max-width: 36rem;
@@ -661,14 +678,11 @@ html.js :where([class*="taos:"]:not(.taos-init)) {
 .grid-cols-1 {
   grid-template-columns: repeat(1, minmax(0, 1fr));
 }
-.grid-cols-4 {
-  grid-template-columns: repeat(4, minmax(0, 1fr));
-}
-.flex-row {
-  flex-direction: row;
-}
 .flex-col {
   flex-direction: column;
+}
+.items-center {
+  align-items: center;
 }
 .justify-between {
   justify-content: space-between;
@@ -686,20 +700,14 @@ html.js :where([class*="taos:"]:not(.taos-init)) {
 .gap-y-6 {
   row-gap: 1.5rem;
 }
-.self-start {
-  align-self: flex-start;
+.self-center {
+  align-self: center;
 }
 .overflow-hidden {
   overflow: hidden;
 }
-.overflow-y-auto {
-  overflow-y: auto;
-}
 .overflow-x-hidden {
   overflow-x: hidden;
-}
-.overflow-y-hidden {
-  overflow-y: hidden;
 }
 .scroll-smooth {
   scroll-behavior: smooth;
@@ -783,12 +791,6 @@ html.js :where([class*="taos:"]:not(.taos-init)) {
 }
 .p-6 {
   padding: 1.5rem;
-}
-.p-8 {
-  padding: 2rem;
-}
-.p-16 {
-  padding: 4rem;
 }
 .px-4 {
   padding-left: 1rem;
@@ -884,10 +886,13 @@ html.js :where([class*="taos:"]:not(.taos-init)) {
         scrollbar-width: none;  /* Firefox */
     }
 
-.fade-out {
-  transition-duration: 300ms;
-  transform: translate(100%);
-}
+/* html, body {
+  min-width: 100vw;
+  min-height: 100vh;
+  margin: 0;
+  box-sizing: border-box;
+  overflow: hidden;
+} */
 
 .hover\:scale-110:hover {
   --tw-scale-x: 1.1;
@@ -922,8 +927,16 @@ html.js :where([class*="taos:"]:not(.taos-init)) {
     z-index: -10;
   }
 
+  .sm\:mb-8 {
+    margin-bottom: 2rem;
+  }
+
   .sm\:ml-16 {
     margin-left: 4rem;
+  }
+
+  .sm\:ml-4 {
+    margin-left: 1rem;
   }
 
   .sm\:mr-10 {
@@ -936,6 +949,22 @@ html.js :where([class*="taos:"]:not(.taos-init)) {
 
   .sm\:block {
     display: block;
+  }
+
+  .sm\:min-h-screen {
+    min-height: 100vh;
+  }
+
+  .sm\:max-w-2xl {
+    max-width: 42rem;
+  }
+
+  .sm\:max-w-\[50\%\] {
+    max-width: 50%;
+  }
+
+  .sm\:max-w-xl {
+    max-width: 36rem;
   }
 
   .sm\:translate-x-0 {
@@ -959,9 +988,8 @@ html.js :where([class*="taos:"]:not(.taos-init)) {
     flex-direction: row;
   }
 
-  .sm\:py-24 {
-    padding-top: 6rem;
-    padding-bottom: 6rem;
+  .sm\:overflow-y-auto {
+    overflow-y: auto;
   }
 
   .sm\:py-20 {
@@ -999,18 +1027,42 @@ html.js :where([class*="taos:"]:not(.taos-init)) {
 
 @media (min-width: 1024px) {
 
+  .lg\:m-12 {
+    margin: 3rem;
+  }
+
   .lg\:mx-0 {
     margin-left: 0px;
     margin-right: 0px;
+  }
+
+  .lg\:ml-16 {
+    margin-left: 4rem;
+  }
+
+  .lg\:mt-8 {
+    margin-top: 2rem;
   }
 
   .lg\:max-w-none {
     max-width: none;
   }
 
+  .lg\:grid-cols-4 {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+  }
+
+  .lg\:flex-row {
+    flex-direction: row;
+  }
+
   .lg\:gap-x-10 {
     -moz-column-gap: 2.5rem;
          column-gap: 2.5rem;
+  }
+
+  .lg\:self-start {
+    align-self: flex-start;
   }
 
   .lg\:p-8 {

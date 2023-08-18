@@ -10,6 +10,9 @@ module.exports = {
       colors: {
         'purple': '#37033A'
       },
+      screens: {
+        'tablet': '640px',
+      },
     },
   },
   plugins: [

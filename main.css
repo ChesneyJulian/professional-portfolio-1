@@ -17,7 +17,10 @@
   }
 }
 
-.fade-out {
-  transition-duration: 300ms;
-  transform: translate(100%);
-}
+/* html, body {
+  min-width: 100vw;
+  min-height: 100vh;
+  margin: 0;
+  box-sizing: border-box;
+  overflow: hidden;
+} */

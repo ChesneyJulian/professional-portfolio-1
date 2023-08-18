@@ -1,7 +1,7 @@
 
-  <main class="flex flex-col sm:flex-row justify-evenly">
+  <main class="flex flex-col sm:flex-row justify-evenly max-w-full container overflow-x-hidden">
     <div id="header"
-      class="isolate bg-gradient-to-bl from-[gray-900] via-[gray-900] overflow-hidden py-16 sm:py-20 min-h-screen">
+      class="isolate bg-gradient-to-bl from-[gray-900] via-[gray-900] overflow-hidden py-16 sm:py-20 h-auto sm:min-h-screen">
       <div class="hidden sm:absolute sm:-top-10 sm:right-1/2 sm:-z-10 sm:mr-10 sm:block sm:transform-gpu sm:blur-3xl"
         aria-hidden="true">
         <div
@@ -16,8 +16,8 @@
           style="clip-path: polygon(74.1% 44.1%, 100% 61.6%, 97.5% 26.9%, 85.5% 0.1%, 80.7% 2%, 72.5% 32.5%, 60.2% 62.4%, 52.4% 68.1%, 47.5% 58.3%, 45.2% 34.5%, 27.5% 76.7%, 0.1% 64.9%, 17.9% 100%, 27.6% 76.8%, 76.1% 97.7%, 74.1% 44.1%)">
         </div>
       </div>
-      <div class="mx-auto max-w-xl px-6 lg:px-8">
-        <div class="mx-auto max-w-2xl lg:mx-0">
+      <div class="mx-auto max-w-auto sm:max-w-xl px-6 lg:px-8">
+        <div class="mx-auto max-w-auto sm:max-w-2xl lg:mx-0">
           <h2 class="my-6 text-4xl font-bold tracking-tight sm:text-6xl">Chesney Julian</h2>
           <h2 class="my-6 text-4xl font-bold tracking-tight sm:text-6xl">Full Stack Web Developer</h2>
         </div>
@@ -34,16 +34,16 @@
 
 
     <div
-      class="z-20 min-h-screen flex flex-col mt-16 sm:mt-24 justify-between h-screen text-gray-200 scroll-smooth overflow-y-auto no-scrollbar">
+      class="z-20 min-h-screen max-w-screen sm:max-w-[50%] flex flex-col mt-16 sm:mt-24 justify-between h-screen text-gray-200 scroll-smooth sm:overflow-y-auto overflow-x-hidden no-scrollbar">
       <div id="about-me" class="flex flex-col container mb-32 mx-auto p-6 lg:p-8">
         <h3 class="font-bold text-2xl sm:text-5xl tracking-tight">Hello</h3>
-        <p class="my-12 ml-16 font-medium text-xl sm:text-2xl max-w-2xl">This is a paragraph all about me. I build
+        <p class="my-12 ml-8 sm:ml-16 font-medium text-xl sm:text-2xl max-w-2xl">This is a paragraph all about me. I build
           websites and things. Looks good to me what do you think? Let me know below. Here's some more text to take up
           some room. Isn't this fun? I think so.</p>
       </div>
       <div id="skills" class="flex flex-col container mb-32 mx-auto p-6 lg:p-8">
         <h3 class="font-bold text-2xl sm:text-5xl tracking-tight pb-12">Skills</h3>
-        <div class="grid row-auto grid-cols-4 gap-4">
+        <div class="grid row-auto sm:grid-cols-2 lg:grid-cols-4 gap-4 ml-16 sm:ml-4">
           <div class="rounded-full py-2 px-4 bg-fuchsia-700 w-32 text-center">JavaScript</div>
           <div class="rounded-full py-2 px-4 bg-fuchsia-700 w-32 text-center">HTML</div>
           <div class="rounded-full py-2 px-4 bg-fuchsia-700 w-32 text-center">CSS</div>
@@ -61,79 +61,79 @@
 
       <div id="recent-projects" class="container mx-auto p-6 lg:p-8">
         <h3 class="font-bold text-2xl sm:text-5xl tracking-tight mb-8">Recent Projects</h3>
-        <div class="flex flex-row">
-          <div>
+        <div class="flex flex-col lg:flex-row items-center mb-36">
+          <div class="m-4 h-80">
             <div class="relative z-10"><img src="/images/maintenance-manatee.png"
                 class="transform duration-300 hover:scale-110 h-64 w-52 rounded aspect-square object-cover object-top z-20"></div>
             <div class="bg-indigo-700 h-52 w-52 rounded-full relative -top-36 left-20"></div>
           </div>
-          <div class="flex flex-col min-w-[50%] m-12">
-            <h5 class="self-start text-3xl transform duration-300 hover:scale-110">Maintenance Manatee</h5>
-            <a class="ml-16 mt-8 transform duration-300 hover:scale-110 hover:text-fuchsia-700" href="/projects/0">Case
+          <div class="flex flex-col min-w-[50%] lg:m-12">
+            <h5 class="self-center lg:self-start text-3xl transform duration-300 hover:scale-110">Maintenance Manatee</h5>
+            <a class="self-center lg:self-start lg:ml-16 lg:mt-8 transform duration-300 hover:scale-110 hover:text-fuchsia-700" href="/projects/0">Case
               Study<span aria-hidden="true">&rarr;</span></a>
           </div>
         </div>
 
-        <div class="flex flex-row">
-          <div>
+        <div class="flex flex-col lg:flex-row items-center mb-36">
+          <div class="m-4 h-80">
             <div class="relative z-10"><img src="/images/night-in-generator.png"
                 class="transform duration-300 hover:scale-110 h-64 w-52 rounded aspect-square object-cover object-top z-20"></div>
             <div class="bg-rose-700 h-52 w-52 rounded-full relative -top-36 left-20"></div>
           </div>
-          <div class="flex flex-col min-w-[50%] m-12">
-            <h5 class="self-start  text-3xl transform duration-300 hover:scale-110">Night-In Generator</h5>
-            <a class="ml-16 mt-8 transform duration-300 hover:scale-110 hover:text-fuchsia-700" href="projects/1">Case
+          <div class="flex flex-col min-w-[50%] lg:m-12">
+            <h5 class="self-center lg:self-start text-3xl transform duration-300 hover:scale-110">Night-In Generator</h5>
+            <a class="self-center lg:self-start lg:ml-16 lg:mt-8 transform duration-300 hover:scale-110 hover:text-fuchsia-700" href="projects/1">Case
               Study<span aria-hidden="true">&rarr;</span></a>
           </div>
         </div>
 
-        <div class="flex flex-row">
-          <div>
+        <div class="flex flex-col lg:flex-row items-center mb-36">
+          <div class="m-4 h-80">
             <div class="relative z-10"><img src="/images/tech-blog-screenshot.png" class="transform duration-300 hover:scale-110 h-64 w-52 rounded aspect-square object-cover object-top z-20"></div>
             <div class="bg-blue-500 h-52 w-52 rounded-full relative -top-36 left-20"></div>
           </div>
-          <div class="flex flex-col min-w-[50%] m-12">
-            <h5 class="self-start  text-3xl transform duration-300 hover:scale-110">Tech Blog</h5>
-            <a class="transform ml-16 mt-8 duration-300 hover:scale-110 hover:text-fuchsia-700" href="projects/2">Case
+          <div class="flex flex-col min-w-[50%] lg:m-12">
+            <h5 class="self-center lg:self-start text-3xl transform duration-300 hover:scale-110">Tech Blog</h5>
+            <a class="self-center lg:self-start lg:ml-16 lg:mt-8 transform duration-300 hover:scale-110 hover:text-fuchsia-700" href="projects/2">Case
               Study<span aria-hidden="true">&rarr;</span></a>
           </div>
         </div>
 
-        <div class="flex flex-row">
-          <div>
+        <div class="flex flex-col lg:flex-row items-center mb-36">
+          <div class="m-4 h-80">
             <div class="relative z-10"><img src="/images/e-commerce-backend.png"
                 class="transform duration-300 hover:scale-110 h-64 w-52 rounded aspect-square object-cover object-left z-20"></div>
             <div class="bg-fuchsia-800 h-52 w-52 rounded-full relative -top-36 left-20"></div>
           </div>
-          <div class="flex flex-col min-w-[50%] m-12">
-            <h5 class="self-start  text-3xl transform duration-300 hover:scale-110">E-commerce Backend</h5>
-            <a class="transform ml-16 mt-8 duration-300 hover:scale-110 hover:text-fuchsia-700" href="projects/3">Case
+          <div class="flex flex-col min-w-[50%] lg:m-12">
+            <h5 class="self-center lg:self-start text-3xl transform duration-300 hover:scale-110">E-commerce Backend</h5>
+            <a class="self-center lg:self-start lg:ml-16 lg:mt-8 transform duration-300 hover:scale-110 hover:text-fuchsia-700" href="projects/3">Case
               Study<span aria-hidden="true">&rarr;</span></a>
           </div>
         </div>
 
-        <div class="flex flex-row">
-          <div>
+        <div class="flex flex-col lg:flex-row items-center mb-36">
+          <div class="m-4 h-80">
             <div class="relative z-10"><img src="/images/README-generator.png"
                 class="transform duration-300 hover:scale-110 h-64 w-52 rounded aspect-square object-cover object-left z-20"></div>
             <div class="bg-teal-500 h-52 w-52 rounded-full relative -top-36 left-20"></div>
           </div>
-          <div class="flex flex-col min-w-[50%] m-12">
-            <h5 class="self-start  text-3xl transform duration-300 hover:scale-110">Professional README.md Generator</h5>
-            <a class="transform ml-16 mt-8 duration-300 hover:scale-110 hover:text-fuchsia-700" href="/projects/4">Case
+          <div class="flex flex-col min-w-[50%] lg:m-12">
+            <h5 class="self-center lg:self-start text-3xl transform duration-300 hover:scale-110">Professional README.md Generator</h5>
+            <a class="self-center lg:self-start lg:ml-16 lg:mt-8 transform duration-300 hover:scale-110 hover:text-fuchsia-700" href="/projects/4">Case
               Study<span aria-hidden="true">&rarr;</span></a>
           </div>
         </div>
 
-        <div class="flex flex-row">
-          <div>
+        <div class="flex flex-col lg:flex-row items-center mb-36">
+          <div class="m-4 h-80">
             <div class="relative z-10"><img src="/images/weather-dashboard.png"
                 class="transform duration-300 hover:scale-110 h-64 w-52 rounded aspect-square object-cover object-left z-20"></div>
             <div class="bg-cyan-500 h-52 w-52 rounded-full relative -top-36 left-20"></div>
           </div>
-          <div class="flex flex-col min-w-[50%] m-12">
-            <h5 class="self-start  text-3xl transform duration-300 hover:scale-110">Weather Dashboard</h5>
-            <a class="transform ml-16 mt-8 duration-300 hover:scale-110 hover:text-fuchsia-700" href="projects/5">Case
+          <div class="flex flex-col min-w-[50%] lg:m-12">
+            <h5 class="self-center lg:self-start text-3xl transform duration-300 hover:scale-110">Weather Dashboard</h5>
+            <a class="self-center lg:self-start lg:ml-16 lg:mt-8 transform duration-300 hover:scale-110 hover:text-fuchsia-700" href="projects/5">Case
               Study<span aria-hidden="true">&rarr;</span></a>
           </div>
         </div>

@@ -36,24 +36,22 @@
       </div>
     </div>
     <div
-      class="z-20 container-fluid min-h-screen flex flex-col mt-16 sm:mt-24 scroll-mt-16 sm:scroll-mt-24 justify-between h-screen text-gray-200 scroll-smooth overflow-y-auto no-scrollbar">
-      <div id="description" class="flex flex-col container mb-8 mx-auto p-6 lg:p-8">
+      class="z-20 container-fluid min-h-screen flex flex-col mt-8 sm:mt-24 scroll-mt-16 sm:scroll-mt-24 justify-between h-screen text-gray-200 scroll-smooth sm:overflow-y-auto no-scrollbar">
+      <div id="description" class="flex flex-col container mb-4 sm:mb-8 mx-auto p-6 lg:p-8">
         <h3 class="font-bold text-2xl sm:text-5xl tracking-tight">About the project</h3>
-        <p class="my-12 ml-16 font-medium text-xl sm:text-2xl max-w-2xl">{{description}}</p>
+        <p class="my-12 mx-4 sm:ml-16 font-medium text-xl sm:text-2xl max-w-2xl">{{description}}</p>
       </div>
       <div id="methods" class="flex flex-col container mb-8 mx-auto p-6 lg:p-8">
         <h3 class="font-bold text-2xl sm:text-5xl tracking-tight">Methods</h3>
-        <p class="my-12 ml-16 font-medium text-xl sm:text-2xl max-w-2xl">{{methods}}</p>
+        <p class="my-12 mx-4 sm:ml-16 font-medium text-xl sm:text-2xl max-w-2xl">{{methods}}</p>
       </div>
       <div id="skills-displayed" class="flex flex-col container mb-8 mx-auto  p-6 lg:p-8">
         <h3 class="font-bold text-2xl sm:text-5xl tracking-tight pb-12">Skills Displayed</h3>
-          <ul class="list-disc my-12 ml-16 font-medium text-xl sm:text-2xl max-w-2xl">
+          <ul class="list-disc my-12 mx-8 sm:ml-16 font-medium text-xl sm:text-2xl max-w-2xl">
             {{#each skills as |skill| }}
             <li>{{skill}}</li>
             {{/each}}  
           </ul>
-          
-          
         </div>
       </div>
     </div>
