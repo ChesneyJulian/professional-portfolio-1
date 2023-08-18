@@ -650,6 +650,9 @@ html.js :where([class*="taos:"]:not(.taos-init)) {
 .min-w-\[50\%\] {
   min-width: 50%;
 }
+.min-w-full {
+  min-width: 100%;
+}
 .max-w-2xl {
   max-width: 42rem;
 }
@@ -678,11 +681,17 @@ html.js :where([class*="taos:"]:not(.taos-init)) {
 .grid-cols-1 {
   grid-template-columns: repeat(1, minmax(0, 1fr));
 }
+.flex-row {
+  flex-direction: row;
+}
 .flex-col {
   flex-direction: column;
 }
 .items-center {
   align-items: center;
+}
+.justify-center {
+  justify-content: center;
 }
 .justify-between {
   justify-content: space-between;
@@ -810,6 +819,9 @@ html.js :where([class*="taos:"]:not(.taos-init)) {
 }
 .pb-12 {
   padding-bottom: 3rem;
+}
+.text-left {
+  text-align: left;
 }
 .text-center {
   text-align: center;
@@ -997,6 +1009,10 @@ html.js :where([class*="taos:"]:not(.taos-init)) {
     padding-bottom: 5rem;
   }
 
+  .sm\:text-center {
+    text-align: center;
+  }
+
   .sm\:text-2xl {
     font-size: 1.5rem;
     line-height: 2rem;
@@ -1023,6 +1039,22 @@ html.js :where([class*="taos:"]:not(.taos-init)) {
   .md\:flex {
     display: flex;
   }
+
+  .md\:overflow-hidden {
+    overflow: hidden;
+  }
+
+  .md\:overflow-y-auto {
+    overflow-y: auto;
+  }
+
+  .md\:overflow-y-hidden {
+    overflow-y: hidden;
+  }
+
+  .md\:text-left {
+    text-align: left;
+  }
 }
 
 @media (min-width: 1024px) {
@@ -1042,6 +1074,30 @@ html.js :where([class*="taos:"]:not(.taos-init)) {
 
   .lg\:mt-8 {
     margin-top: 2rem;
+  }
+
+  .lg\:h-full {
+    height: 100%;
+  }
+
+  .lg\:h-2\/4 {
+    height: 50%;
+  }
+
+  .lg\:h-5 {
+    height: 1.25rem;
+  }
+
+  .lg\:h-10 {
+    height: 2.5rem;
+  }
+
+  .lg\:h-48 {
+    height: 12rem;
+  }
+
+  .lg\:h-80 {
+    height: 20rem;
   }
 
   .lg\:max-w-none {
@@ -1065,6 +1121,10 @@ html.js :where([class*="taos:"]:not(.taos-init)) {
     align-self: flex-start;
   }
 
+  .lg\:overflow-y-scroll {
+    overflow-y: scroll;
+  }
+
   .lg\:p-8 {
     padding: 2rem;
   }
@@ -1072,5 +1132,9 @@ html.js :where([class*="taos:"]:not(.taos-init)) {
   .lg\:px-8 {
     padding-left: 2rem;
     padding-right: 2rem;
+  }
+
+  .lg\:text-left {
+    text-align: left;
   }
 }
