@@ -555,6 +555,9 @@ html.js :where([class*="taos:"]:not(.taos-init)) {
 .m-4 {
   margin: 1rem;
 }
+.m-8 {
+  margin: 2rem;
+}
 .mx-4 {
   margin-left: 1rem;
   margin-right: 1rem;
@@ -587,17 +590,23 @@ html.js :where([class*="taos:"]:not(.taos-init)) {
 .mb-8 {
   margin-bottom: 2rem;
 }
-.ml-16 {
-  margin-left: 4rem;
+.ml-4 {
+  margin-left: 1rem;
 }
 .ml-8 {
   margin-left: 2rem;
+}
+.mr-2 {
+  margin-right: 0.5rem;
 }
 .mt-16 {
   margin-top: 4rem;
 }
 .mt-20 {
   margin-top: 5rem;
+}
+.mt-4 {
+  margin-top: 1rem;
 }
 .mt-6 {
   margin-top: 1.5rem;
@@ -620,8 +629,8 @@ html.js :where([class*="taos:"]:not(.taos-init)) {
 .aspect-square {
   aspect-ratio: 1 / 1;
 }
-.h-16 {
-  height: 4rem;
+.h-12 {
+  height: 3rem;
 }
 .h-52 {
   height: 13rem;
@@ -641,8 +650,8 @@ html.js :where([class*="taos:"]:not(.taos-init)) {
 .min-h-screen {
   min-height: 100vh;
 }
-.w-16 {
-  width: 4rem;
+.w-12 {
+  width: 3rem;
 }
 .w-32 {
   width: 8rem;
@@ -650,14 +659,11 @@ html.js :where([class*="taos:"]:not(.taos-init)) {
 .w-52 {
   width: 13rem;
 }
-.w-\[68\.5625rem\] {
-  width: 68.5625rem;
+.w-screen {
+  width: 100vw;
 }
 .min-w-\[50\%\] {
   min-width: 50%;
-}
-.min-w-full {
-  min-width: 100%;
 }
 .max-w-2xl {
   max-width: 42rem;
@@ -699,6 +705,9 @@ html.js :where([class*="taos:"]:not(.taos-init)) {
 .items-center {
   align-items: center;
 }
+.justify-start {
+  justify-content: flex-start;
+}
 .justify-center {
   justify-content: center;
 }
@@ -710,13 +719,6 @@ html.js :where([class*="taos:"]:not(.taos-init)) {
 }
 .gap-4 {
   gap: 1rem;
-}
-.gap-8 {
-  gap: 2rem;
-}
-.gap-x-6 {
-  -moz-column-gap: 1.5rem;
-       column-gap: 1.5rem;
 }
 .gap-x-8 {
   -moz-column-gap: 2rem;
@@ -733,6 +735,9 @@ html.js :where([class*="taos:"]:not(.taos-init)) {
 }
 .overflow-y-auto {
   overflow-y: auto;
+}
+.overflow-x-hidden {
+  overflow-x: hidden;
 }
 .scroll-smooth {
   scroll-behavior: smooth;
@@ -786,6 +791,11 @@ html.js :where([class*="taos:"]:not(.taos-init)) {
   --tw-gradient-to: rgb(175 65 237 / 0) var(--tw-gradient-to-position);
   --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);
 }
+.from-\[gray-800\] {
+  --tw-gradient-from: gray-800 var(--tw-gradient-from-position);
+  --tw-gradient-to: rgb(255 255 255 / 0) var(--tw-gradient-to-position);
+  --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);
+}
 .from-\[gray-900\] {
   --tw-gradient-from: gray-900 var(--tw-gradient-from-position);
   --tw-gradient-to: rgb(255 255 255 / 0) var(--tw-gradient-to-position);
@@ -795,16 +805,16 @@ html.js :where([class*="taos:"]:not(.taos-init)) {
   --tw-gradient-to: rgb(231 19 176 / 0)  var(--tw-gradient-to-position);
   --tw-gradient-stops: var(--tw-gradient-from), #E713B0 var(--tw-gradient-via-position), var(--tw-gradient-to);
 }
+.via-\[gray-800\] {
+  --tw-gradient-to: rgb(255 255 255 / 0)  var(--tw-gradient-to-position);
+  --tw-gradient-stops: var(--tw-gradient-from), gray-800 var(--tw-gradient-via-position), var(--tw-gradient-to);
+}
 .via-\[gray-900\] {
   --tw-gradient-to: rgb(255 255 255 / 0)  var(--tw-gradient-to-position);
   --tw-gradient-stops: var(--tw-gradient-from), gray-900 var(--tw-gradient-via-position), var(--tw-gradient-to);
 }
 .to-\[\#E713B0\] {
   --tw-gradient-to: #E713B0 var(--tw-gradient-to-position);
-}
-.object-contain {
-  -o-object-fit: contain;
-     object-fit: contain;
 }
 .object-cover {
   -o-object-fit: cover;
@@ -817,9 +827,6 @@ html.js :where([class*="taos:"]:not(.taos-init)) {
 .object-top {
   -o-object-position: top;
      object-position: top;
-}
-.p-12 {
-  padding: 3rem;
 }
 .p-6 {
   padding: 1.5rem;
@@ -839,10 +846,6 @@ html.js :where([class*="taos:"]:not(.taos-init)) {
 .py-2 {
   padding-top: 0.5rem;
   padding-bottom: 0.5rem;
-}
-.py-24 {
-  padding-top: 6rem;
-  padding-bottom: 6rem;
 }
 .pb-12 {
   padding-bottom: 3rem;
@@ -929,10 +932,12 @@ html.js :where([class*="taos:"]:not(.taos-init)) {
         scrollbar-width: none;  /* Firefox */
     }
 
-html, main, body {
+main, body {
   min-width: 100vw;
   min-height: 100vh;
   box-sizing: border-box;
+  padding: 0px;
+  margin: 0px;
 }
 
 .hover\:scale-110:hover {
@@ -976,10 +981,6 @@ html, main, body {
     margin-left: 4rem;
   }
 
-  .sm\:ml-4 {
-    margin-left: 1rem;
-  }
-
   .sm\:mr-10 {
     margin-right: 2.5rem;
   }
@@ -990,10 +991,6 @@ html, main, body {
 
   .sm\:block {
     display: block;
-  }
-
-  .sm\:min-h-screen {
-    min-height: 100vh;
   }
 
   .sm\:max-w-2xl {
@@ -1034,11 +1031,6 @@ html, main, body {
     padding-bottom: 5rem;
   }
 
-  .sm\:py-32 {
-    padding-top: 8rem;
-    padding-bottom: 8rem;
-  }
-
   .sm\:text-2xl {
     font-size: 1.5rem;
     line-height: 2rem;
@@ -1064,19 +1056,27 @@ html, main, body {
     filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
   }
 
-  .tablet\:overflow-y-clip {
-    overflow-y: clip;
+  .tablet\:overflow-y-hidden {
+    overflow-y: hidden;
   }
 }
 
 @media (min-width: 768px) {
 
+  .md\:ml-16 {
+    margin-left: 4rem;
+  }
+
   .md\:flex {
     display: flex;
   }
 
-  .md\:grid-cols-2 {
-    grid-template-columns: repeat(2, minmax(0, 1fr));
+  .md\:h-16 {
+    height: 4rem;
+  }
+
+  .md\:w-16 {
+    width: 4rem;
   }
 }
 

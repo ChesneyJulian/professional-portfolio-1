@@ -17,8 +17,10 @@
   }
 }
 
-html, main, body {
+main, body {
   min-width: 100vw;
   min-height: 100vh;
   box-sizing: border-box;
+  padding: 0px;
+  margin: 0px;
 }
