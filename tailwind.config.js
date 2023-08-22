@@ -13,6 +13,11 @@ module.exports = {
       screens: {
         'tablet': '640px',
       },
+      fontFamily: {
+        'main-bold': ['Manrope', 'ExtraBold'],
+        'main-semi': ['Manrope', 'SemiBold'],
+        'main-normal': ['Manrope', 'Regular']
+      }
     },
   },
   plugins: [

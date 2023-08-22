@@ -18,10 +18,10 @@
       </div>
       <div class="mx-auto max-w-xl px-6 lg:px-8">
         <div class="mx-auto max-w-2xl lg:mx-0">
-          <h2 class="my-6 text-2xl font-bold sm:text-5xl">{{name}}</h2>
+          <h2 class="my-6 text-2xl font-main-bold sm:text-5xl">{{name}}</h2>
         </div>
         <div class="mx-auto mt-16 max-w-2xl lg:mx-0 lg:max-w-none">
-          <div class="my-6 grid grid-cols-1 gap-x-8 gap-y-6 text-base font-normal sm:grid-cols-2 md:flex lg:gap-x-10">
+          <div class="my-6 grid grid-cols-1 gap-x-8 gap-y-6 text-base font-main-normal sm:grid-cols-2 md:flex lg:gap-x-10">
             {{#if url}}
             <a class="text-slate-300 transform duration-300 hover:scale-110 hover:text-fuchsia-700" href="{{url}}" target="_blank">Visit the App</a>
             {{/if}}
@@ -39,16 +39,16 @@
     <div
       class="z-20 container-fluid min-h-screen flex flex-col mt-8 sm:mt-24 scroll-mt-16 sm:scroll-mt-24 justify-between h-screen text-gray-200 scroll-smooth sm:overflow-y-auto no-scrollbar">
       <div id="description" class="flex flex-col container mb-4 sm:mb-8 mx-auto p-6 lg:p-8">
-        <h3 class="font-medium text-2xl sm:text-5xl">About the project</h3>
-        <p class="my-12 mx-4 sm:ml-16 font-normal text-xl sm:text-2xl max-w-2xl">{{description}}</p>
+        <h3 class="font-main-semi text-2xl sm:text-5xl">About the project</h3>
+        <p class="my-12 mx-4 sm:ml-16 font-main-normal text-xl sm:text-2xl max-w-2xl">{{description}}</p>
       </div>
       <div id="methods" class="flex flex-col container mb-8 mx-auto p-6 lg:p-8">
-        <h3 class="font-medium text-2xl sm:text-5xl">Methods</h3>
-        <p class="my-12 mx-4 sm:ml-16 font-normal text-xl sm:text-2xl max-w-2xl">{{methods}}</p>
+        <h3 class="font-main-semi text-2xl sm:text-5xl">Methods</h3>
+        <p class="my-12 mx-4 sm:ml-16 font-main-normal text-xl sm:text-2xl max-w-2xl">{{methods}}</p>
       </div>
       <div id="skills-displayed" class="flex flex-col container mb-8 mx-auto  p-6 lg:p-8">
-        <h3 class="font-medium text-2xl sm:text-5xl pb-12">Skills Displayed</h3>
-          <ul class="list-disc my-12 mx-8 sm:ml-16 font-normal text-xl sm:text-2xl max-w-2xl">
+        <h3 class="font-main-semi text-2xl sm:text-5xl pb-12">Skills Displayed</h3>
+          <ul class="list-disc my-12 mx-8 sm:ml-16 font-main-normal text-xl sm:text-2xl max-w-2xl">
             {{#each skills as |skill| }}
             <li>{{skill}}</li>
             {{/each}}  
