@@ -52,7 +52,7 @@
       "skills": ["Version Control", "Responsive Design", "JavaScript", "Document Object Model (DOM)", "Bootstrap", "Third-party APIs", "Local Storage"],
       "methods": "Weather Dashboard utilizes two fetch requests to render data from Open Weather Map API: the Current Weather Data API and the Forecast API. The HTML elements responsible for displaying data from these APIs are generated using JavaScript and the Document Object Model. Local Storage is implemented to store the user's past searches for easier access to search results. The website uses the Bootstrap theme Cerulean for styling and responsiveness.",
       "github": "https://github.com/ChesneyJulian/weather-dashboard/",
-      "url": "https://github.com/ChesneyJulian/weather-dashboard/",
+      "url": "https://chesneyjulian.github.io/weather-dashboard/",
       "image": "/images/weather-dashboard.png"
     }
   ]
