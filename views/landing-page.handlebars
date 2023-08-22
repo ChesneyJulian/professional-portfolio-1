@@ -22,11 +22,11 @@
           <h2 class="my-6 text-2xl font-main-semi sm:text-4xl">Full Stack Web Developer</h2>
         </div>
         <div class="mx-auto mt-20 max-w-2xl lg:mx-0 lg:max-w-none">
-          <div class="my-6 grid grid-cols-1 gap-x-8 gap-y-6 text-base text-slate-300 font-main-normal sm:grid-cols-2 md:flex lg:gap-x-10">
+          <div class="my-6 grid grid-cols-1 lg:flex gap-x-8 gap-y-6 text-base text-slate-300 font-main-normal lg:gap-x-10">
             <a class="transform duration-300 hover:scale-110 hover:text-fuchsia-700" href="#about-me">About Me</a>
             <a class="transform duration-300 hover:scale-110 hover:text-fuchsia-700" href="#skills">Skills</a>
             <a class="transform duration-300 hover:scale-110 hover:text-fuchsia-700" href="#recent-projects">Recent Projects</a>
-            <a class="transform duration-300 hover:scale-110 hover:text-fuchsia-700" href="/contact">Contact Me</a>
+            <a class="transform duration-300 hover:scale-110 hover:text-fuchsia-700" href="#contact">Contact Me</a>
           </div>
         </div>
       </div>
@@ -37,7 +37,7 @@
       class="z-20 min-h-screen flex flex-col mt-8 sm:mt-24 scroll-mt-16 sm:scroll-mt-24 justify-between h-screen scroll-smooth sm:overflow-y-auto no-scrollbar">
       <div id="about-me" class="flex flex-col container mb-32 mx-auto p-6 lg:p-8">
         <h3 class="font-main-semi text-2xl sm:text-5xl">About Me</h3>
-        <p class="my-12 ml-8 sm:ml-16 font-main-normal text-xl sm:text-2xl max-w-2xl leading-10">I am a full stack web developer from Knoxville, TN. I am passionate about turning ideas into beautiful applications that not only look and feel great, but also function pristinely. I am committed to a lifestyle of learning and always look for oppportunities to implement the best software engineering practices in order to achieve the best possible outcome. Lately, I have been honing my skills through Vanderbilt University's Bootcamp in full stack web development.</p>
+        <p class="my-12 ml-8 sm:ml-16 font-main-normal text-xl sm:text-2xl max-w-2xl leading-10">I am a full stack web developer from Knoxville, TN. I am passionate about turning ideas into beautiful applications that not only look and feel great, but also offer advanced solutions to real world problems. I prioritize active learning and believe that web development offers endless opportunities for improvement. By practicing this mindset, I have been successfully crafting and maintaining my skills in responsive full stack web design. Lately, I have been gaining experience and knowledge while earning a Certificate in Full Stack Web Development through Vanderbilt University's Web Development Bootcamp.</p>
       </div>
       <div id="skills" class="flex flex-col container mb-32 mx-auto p-6 lg:p-8">
         <h3 class="font-main-semi text-2xl sm:text-5xl pb-12">Skills</h3>
@@ -59,80 +59,120 @@
 
       <div id="recent-projects" class="font-main-normal container mx-auto p-6 lg:p-8">
         <h3 class="font-main-semi text-2xl sm:text-5xl mb-8">Recent Projects</h3>
-        <div class="flex flex-col lg:flex-row items-center mb-36">
+        <div class="flex flex-col lg:flex-row items-start mx-4 tablet:items-center lg:mx-0 mb-36">
           <div class="m-4 h-80">
-            <div class="relative z-10"><a target="_blank" href="https://maintenance-manatee-20230807-e071f072b462.herokuapp.com/"><img src="/images/maintenance-manatee.png"
+            <div class="relative z-10 "><a target="_blank" href="https://maintenance-manatee-20230807-e071f072b462.herokuapp.com/"><img src="/images/maintenance-manatee.png"
                 class="transform duration-300 hover:scale-110 h-64 w-52 rounded aspect-square object-cover object-top z-20"></a></div>
             <div class="bg-indigo-700 h-52 w-52 rounded-full relative -top-36 left-20"></div>
           </div>
-          <div class="flex flex-col min-w-[50%] lg:m-12">
-            <h5 class="self-center lg:self-start text-3xl transform duration-300 hover:scale-110">Maintenance Manatee</h5>
+          <div class="flex flex-col min-w-full lg:m-12">
+            <h5 class="self-center text-center lg:self-start text-2xl sm:text-3xl transform duration-300 hover:scale-110">Maintenance Manatee</h5>
             <a class="text-slate-300 self-center lg:self-start lg:ml-16 lg:mt-8 transform duration-300 hover:scale-110 hover:text-fuchsia-700" href="/projects/0">Case
               Study <span aria-hidden="true">&rarr;</span></a>
           </div>
         </div>
 
-        <div class="flex flex-col lg:flex-row items-center mb-36">
+        <div class="flex flex-col lg:flex-row items-start mx-4 tablet:items-center lg:mx-0 mb-36">
           <div class="m-4 h-80">
             <div class="relative z-10"><a target="_blank" href="https://cdgonzo23.github.io/night-in-generator/"><img src="/images/night-in-generator.png"
                 class="transform duration-300 hover:scale-110 h-64 w-52 rounded aspect-square object-cover object-top z-20"></a></div>
             <div class="bg-rose-700 h-52 w-52 rounded-full relative -top-36 left-20"></div>
           </div>
-          <div class="flex flex-col min-w-[50%] lg:m-12">
-            <h5 class="self-center lg:self-start text-3xl transform duration-300 hover:scale-110">Night-In Generator</h5>
+          <div class="flex flex-col min-w-full lg:m-12">
+            <h5 class="self-center lg:self-start text-2xl sm:text-3xl transform duration-300 hover:scale-110">Night-In Generator</h5>
             <a class="text-slate-300 self-center lg:self-start lg:ml-16 lg:mt-8 transform duration-300 hover:scale-110 hover:text-fuchsia-700" href="projects/1">Case
               Study <span aria-hidden="true">&rarr;</span></a>
           </div>
         </div>
 
-        <div class="flex flex-col lg:flex-row items-center mb-36">
+        <div class="flex flex-col lg:flex-row items-start mx-4 tablet:items-center lg:mx-0 mb-36">
           <div class="m-4 h-80">
             <div class="relative z-10"><a target="_blank" href="https://mvc-tech-blog-2023-86b27f515ccd.herokuapp.com/"><img src="/images/tech-blog-screenshot.png" class="transform duration-300 hover:scale-110 h-64 w-52 rounded aspect-square object-cover object-top z-20"></a></div>
             <div class="bg-blue-500 h-52 w-52 rounded-full relative -top-36 left-20"></div>
           </div>
-          <div class="flex flex-col min-w-[50%] lg:m-12">
-            <h5 class="self-center lg:self-start text-3xl transform duration-300 hover:scale-110">Tech Blog</h5>
+          <div class="flex flex-col min-w-full lg:m-12">
+            <h5 class="self-center lg:self-start text-2xl sm:text-3xl transform duration-300 hover:scale-110">Tech Blog</h5>
             <a class="text-slate-300 self-center lg:self-start lg:ml-16 lg:mt-8 transform duration-300 hover:scale-110 hover:text-fuchsia-700" href="projects/2">Case
               Study <span aria-hidden="true">&rarr;</span></a>
           </div>
         </div>
 
-        <div class="flex flex-col lg:flex-row items-center mb-36">
+        <div class="flex flex-col lg:flex-row items-start mx-4 tablet:items-center lg:mx-0 mb-36">
           <div class="m-4 h-80">
             <div class="relative z-10"><a target="_blank" href="https://github.com/ChesneyJulian/e-commerce-back-end"><img src="/images/e-commerce-backend.png"
                 class="transform duration-300 hover:scale-110 h-64 w-52 rounded aspect-square object-cover object-left z-20"></a></div>
             <div class="bg-fuchsia-800 h-52 w-52 rounded-full relative -top-36 left-20"></div>
           </div>
-          <div class="flex flex-col min-w-[50%] lg:m-12">
-            <h5 class="self-center lg:self-start text-3xl transform duration-300 hover:scale-110">E-commerce Backend</h5>
+          <div class="flex flex-col min-w-full lg:m-12">
+            <h5 class="self-center lg:self-start text-2xl sm:text-3xl transform duration-300 hover:scale-110">E-commerce Backend</h5>
             <a class="text-slate-300 self-center lg:self-start lg:ml-16 lg:mt-8 transform duration-300 hover:scale-110 hover:text-fuchsia-700" href="projects/3">Case
               Study <span aria-hidden="true">&rarr;</span></a>
           </div>
         </div>
 
-        <div class="flex flex-col lg:flex-row items-center mb-36">
+        <div class="flex flex-col lg:flex-row items-start mx-4 tablet:items-center lg:mx-0 mb-36">
           <div class="m-4 h-80">
             <div class="relative z-10"><a target="_blank" href="https://github.com/ChesneyJulian/professional-readme-generator/"><img src="/images/README-generator.png"
                 class="transform duration-300 hover:scale-110 h-64 w-52 rounded aspect-square object-cover object-left z-20"></a></div>
             <div class="bg-teal-500 h-52 w-52 rounded-full relative -top-36 left-20"></div>
           </div>
-          <div class="flex flex-col min-w-[50%] lg:m-12">
-            <h5 class="self-center lg:self-start text-center lg:text-left text-3xl transform duration-300 hover:scale-110">Professional README.md Generator</h5>
+          <div class="flex flex-col min-w-full lg:m-12">
+            <h5 class="self-center lg:self-start text-center lg:text-left text-2xl sm:text-3xl transform duration-300 hover:scale-110">Professional README.md Generator</h5>
             <a class="text-slate-300 self-center lg:self-start lg:ml-16 lg:mt-8 transform duration-300 hover:scale-110 hover:text-fuchsia-700" href="/projects/4">Case
               Study <span aria-hidden="true">&rarr;</span></a>
           </div>
         </div>
 
-        <div class="flex flex-col lg:flex-row items-center mb-36">
+        <div class="flex flex-col lg:flex-row items-start mx-4 tablet:items-center lg:mx-0 mb-36">
           <div class="m-4 h-80">
             <div class="relative z-10"><a target="_blank" href="https://github.com/ChesneyJulian/weather-dashboard/"><img src="/images/weather-dashboard.png"
                 class="transform duration-300 hover:scale-110 h-64 w-52 rounded aspect-square object-cover object-left z-20"></a></div>
             <div class="bg-cyan-500 h-52 w-52 rounded-full relative -top-36 left-20"></div>
           </div>
-          <div class="flex flex-col min-w-[50%] lg:m-12">
-            <h5 class="self-center lg:self-start text-3xl transform duration-300 hover:scale-110">Weather Dashboard</h5>
+          <div class="flex flex-col min-w-full lg:m-12">
+            <h5 class="self-center lg:self-start text-2xl sm:text-3xl transform duration-300 hover:scale-110">Weather Dashboard</h5>
             <a class="text-slate-300 self-center lg:self-start lg:ml-16 lg:mt-8 transform duration-300 hover:scale-110 hover:text-fuchsia-700" href="projects/5">Case
               Study <span aria-hidden="true">&rarr;</span></a>
+          </div>
+        </div>
+        <div id="contact" class="flex flex-col lg:flex-row items-start tablet:items-center mb-36">
+          <div class="flex flex-col container mb-32 mx-auto p-6 lg:p-8">
+            <h3 class="font-main-semi text-2xl sm:text-5xl mb-8">Let's Work Together</h3>
+            <p class="mt-12 ml-8 sm:ml-16 font-main-normal text-xl sm:text-2xl max-w-2xl leading-10">Thanks for viewing my portfolio! Any messages would be greatly appreciated. If you would like to work together, please contact me via email, phone number, or LinkedIn. If you'd like to see more of my work, check out my GitHub profile.</p>
+            <ul role="list" class="my-8 ml-8 sm:ml-16 font-main-normal text-l sm:text-xl max-w-2xl leading-10 flex flex-col items-start">
+              <li class="mt-4">
+                <div class="flex flex-row items-center">
+                  <img class="h-12 w-12 mr-2 md:h-16 md:w-16 rounded-full" src="/images/phone.png" alt="">
+                  <div>
+                    <a class="transform duration-300 hover:scale-110 hover:text-fuchsia-700 text-slate-300" href="tel:865-850-5283">(865)850-5283</a>
+                  </div>
+                </div>
+              </li>
+              <li class="mt-4">
+                <div class="flex flex-row items-center">
+                  <img class="h-12 w-12 mr-2 md:h-16 md:w-16 rounded-full" src="/images/email.png" alt="">
+                  <div>
+                    <a class="transform duration-300 hover:scale-110 hover:text-fuchsia-700 text-slate-300" href="mailto: chesney.julian724@gmail.com">chesney.julian724@gmail.com</a>
+                  </div>
+                </div>
+              </li>
+              <li class="mt-4">
+                <div class="flex flex-row items-center">
+                  <img class="h-12 w-12 mr-2 md:h-16 md:w-16 rounded-full" src="/images/linkedin.png" alt="">
+                  <div>
+                    <a class="transform duration-300 hover:scale-110 hover:text-fuchsia-700 text-slate-300" target="_blank" href="https://www.linkedin.com/in/chesney-julian/">LinkedIn</a>
+                  </div>
+                </div>
+              </li>
+              <li class="mt-4">
+                <div class="flex flex-row items-center">
+                  <img class="h-12 w-12 mr-2 md:h-16 md:w-16 rounded-full" src="/images/github.png" alt="">
+                  <div>
+                    <a class="transform duration-300 hover:scale-110 hover:text-fuchsia-700 text-slate-300" target="_blank" href="https://github.com/ChesneyJulian">GitHub</a>
+                  </div>
+                </div>
+              </li>
+            </ul>
           </div>
         </div>
       </div>

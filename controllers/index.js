@@ -25,8 +25,4 @@ router.get('/projects/:index', (req, res) => {
   });
 })
 
-router.get('/contact', (req, res) => {
-  res.render('contact');
-})
-
 module.exports = router;
