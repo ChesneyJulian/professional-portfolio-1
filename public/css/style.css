@@ -722,9 +722,6 @@ html.js :where([class*="taos:"]:not(.taos-init)){
 .m-4{
   margin: 1rem;
 }
-.m-8{
-  margin: 2rem;
-}
 .mx-4{
   margin-left: 1rem;
   margin-right: 1rem;
@@ -781,9 +778,6 @@ html.js :where([class*="taos:"]:not(.taos-init)){
 }
 .mt-4{
   margin-top: 1rem;
-}
-.mt-6{
-  margin-top: 1.5rem;
 }
 .mt-8{
   margin-top: 2rem;
@@ -842,9 +836,6 @@ html.js :where([class*="taos:"]:not(.taos-init)){
 .max-w-2xl{
   max-width: 42rem;
 }
-.max-w-7xl{
-  max-width: 80rem;
-}
 .max-w-xl{
   max-width: 36rem;
 }
@@ -881,9 +872,6 @@ html.js :where([class*="taos:"]:not(.taos-init)){
 }
 .items-center{
   align-items: center;
-}
-.justify-start{
-  justify-content: flex-start;
 }
 .justify-center{
   justify-content: center;
@@ -1043,10 +1031,6 @@ html.js :where([class*="taos:"]:not(.taos-init)){
   font-size: 1.5rem;
   line-height: 2rem;
 }
-.text-3xl{
-  font-size: 1.875rem;
-  line-height: 2.25rem;
-}
 .text-4xl{
   font-size: 2.25rem;
   line-height: 2.5rem;
@@ -1054,10 +1038,6 @@ html.js :where([class*="taos:"]:not(.taos-init)){
 .text-base{
   font-size: 1rem;
   line-height: 1.5rem;
-}
-.text-lg{
-  font-size: 1.125rem;
-  line-height: 1.75rem;
 }
 .text-xl{
   font-size: 1.25rem;
@@ -1068,9 +1048,6 @@ html.js :where([class*="taos:"]:not(.taos-init)){
 }
 .leading-7{
   line-height: 1.75rem;
-}
-.leading-8{
-  line-height: 2rem;
 }
 .leading-9{
   line-height: 2.25rem;
