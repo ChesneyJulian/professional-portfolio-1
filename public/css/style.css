@@ -695,6 +695,9 @@ html.js :where([class*="taos:"]:not(.taos-init)){
 .relative{
   position: relative;
 }
+.sticky{
+  position: sticky;
+}
 .-top-36{
   top: -9rem;
 }
@@ -703,6 +706,9 @@ html.js :where([class*="taos:"]:not(.taos-init)){
 }
 .left-20{
   left: 5rem;
+}
+.top-0{
+  top: 0px;
 }
 .isolate{
   isolation: isolate;
@@ -738,6 +744,10 @@ html.js :where([class*="taos:"]:not(.taos-init)){
   margin-top: 3rem;
   margin-bottom: 3rem;
 }
+.my-32{
+  margin-top: 8rem;
+  margin-bottom: 8rem;
+}
 .my-6{
   margin-top: 1.5rem;
   margin-bottom: 1.5rem;
@@ -745,6 +755,9 @@ html.js :where([class*="taos:"]:not(.taos-init)){
 .my-8{
   margin-top: 2rem;
   margin-bottom: 2rem;
+}
+.mb-12{
+  margin-bottom: 3rem;
 }
 .mb-32{
   margin-bottom: 8rem;
@@ -772,9 +785,6 @@ html.js :where([class*="taos:"]:not(.taos-init)){
 }
 .mt-16{
   margin-top: 4rem;
-}
-.mt-20{
-  margin-top: 5rem;
 }
 .mt-4{
   margin-top: 1rem;
@@ -826,9 +836,6 @@ html.js :where([class*="taos:"]:not(.taos-init)){
 }
 .w-52{
   width: 13rem;
-}
-.w-\[80\%\]{
-  width: 80%;
 }
 .w-screen{
   width: 100vw;
@@ -919,6 +926,14 @@ html.js :where([class*="taos:"]:not(.taos-init)){
 .rounded-lg{
   border-radius: 0.5rem;
 }
+.border-x-4{
+  border-left-width: 4px;
+  border-right-width: 4px;
+}
+.border-gray-800{
+  --tw-border-opacity: 1;
+  border-color: rgb(31 41 55 / var(--tw-border-opacity));
+}
 .bg-blue-500{
   --tw-bg-opacity: 1;
   background-color: rgb(59 130 246 / var(--tw-bg-opacity));
@@ -935,13 +950,13 @@ html.js :where([class*="taos:"]:not(.taos-init)){
   --tw-bg-opacity: 1;
   background-color: rgb(134 25 143 / var(--tw-bg-opacity));
 }
-.bg-gray-900{
+.bg-gray-200{
   --tw-bg-opacity: 1;
-  background-color: rgb(17 24 39 / var(--tw-bg-opacity));
+  background-color: rgb(229 231 235 / var(--tw-bg-opacity));
 }
-.bg-gray-950{
+.bg-gray-800{
   --tw-bg-opacity: 1;
-  background-color: rgb(3 7 18 / var(--tw-bg-opacity));
+  background-color: rgb(31 41 55 / var(--tw-bg-opacity));
 }
 .bg-indigo-700{
   --tw-bg-opacity: 1;
@@ -961,19 +976,9 @@ html.js :where([class*="taos:"]:not(.taos-init)){
 .bg-gradient-to-tr{
   background-image: linear-gradient(to top right, var(--tw-gradient-stops));
 }
-.from-\[\#175464\]{
-  --tw-gradient-from: #175464 var(--tw-gradient-from-position);
-  --tw-gradient-to: rgb(23 84 100 / 0) var(--tw-gradient-to-position);
-  --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);
-}
 .from-\[\#AF41ED\]{
   --tw-gradient-from: #AF41ED var(--tw-gradient-from-position);
   --tw-gradient-to: rgb(175 65 237 / 0) var(--tw-gradient-to-position);
-  --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);
-}
-.from-\[gray-800\]{
-  --tw-gradient-from: gray-800 var(--tw-gradient-from-position);
-  --tw-gradient-to: rgb(255 255 255 / 0) var(--tw-gradient-to-position);
   --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);
 }
 .from-\[gray-900\]{
@@ -981,24 +986,13 @@ html.js :where([class*="taos:"]:not(.taos-init)){
   --tw-gradient-to: rgb(255 255 255 / 0) var(--tw-gradient-to-position);
   --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);
 }
-.via-\[\#286588\]{
-  --tw-gradient-to: rgb(40 101 136 / 0)  var(--tw-gradient-to-position);
-  --tw-gradient-stops: var(--tw-gradient-from), #286588 var(--tw-gradient-via-position), var(--tw-gradient-to);
-}
 .via-\[\#E713B0\]{
   --tw-gradient-to: rgb(231 19 176 / 0)  var(--tw-gradient-to-position);
   --tw-gradient-stops: var(--tw-gradient-from), #E713B0 var(--tw-gradient-via-position), var(--tw-gradient-to);
 }
-.via-\[gray-800\]{
-  --tw-gradient-to: rgb(255 255 255 / 0)  var(--tw-gradient-to-position);
-  --tw-gradient-stops: var(--tw-gradient-from), gray-800 var(--tw-gradient-via-position), var(--tw-gradient-to);
-}
 .via-\[gray-900\]{
   --tw-gradient-to: rgb(255 255 255 / 0)  var(--tw-gradient-to-position);
   --tw-gradient-stops: var(--tw-gradient-from), gray-900 var(--tw-gradient-via-position), var(--tw-gradient-to);
-}
-.to-\[\#173C64\]{
-  --tw-gradient-to: #173C64 var(--tw-gradient-to-position);
 }
 .to-\[\#E713B0\]{
   --tw-gradient-to: #E713B0 var(--tw-gradient-to-position);
@@ -1017,6 +1011,9 @@ html.js :where([class*="taos:"]:not(.taos-init)){
 }
 .p-6{
   padding: 1.5rem;
+}
+.p-8{
+  padding: 2rem;
 }
 .px-4{
   padding-left: 1rem;
@@ -1086,13 +1083,17 @@ html.js :where([class*="taos:"]:not(.taos-init)){
   --tw-text-opacity: 1;
   color: rgb(229 231 235 / var(--tw-text-opacity));
 }
+.text-gray-800{
+  --tw-text-opacity: 1;
+  color: rgb(31 41 55 / var(--tw-text-opacity));
+}
+.text-slate-100{
+  --tw-text-opacity: 1;
+  color: rgb(241 245 249 / var(--tw-text-opacity));
+}
 .text-slate-300{
   --tw-text-opacity: 1;
   color: rgb(203 213 225 / var(--tw-text-opacity));
-}
-.text-slate-50{
-  --tw-text-opacity: 1;
-  color: rgb(248 250 252 / var(--tw-text-opacity));
 }
 .opacity-40{
   opacity: 0.4;
@@ -1133,7 +1134,7 @@ main, body {
 
 #typewriter {
   overflow: hidden; /* Ensures the content is not revealed until the animation */
-  border-right: .15em solid rgb(27, 102, 118); /* The typwriter cursor */
+  border-right: .15em solid rgb(36, 125, 146); /* The typwriter cursor */
   white-space: nowrap; /* Keeps the content on a single line */
   /* margin: 0 auto; Gives that scrolling effect as the typing happens */
   letter-spacing: .08em; /* Adjust as needed */
@@ -1145,18 +1146,85 @@ main, body {
 /* The typing effect */
 @keyframes typing {
   from { width: 0% }
-  to { width: 80% }
+  to { width: 100% }
 }
 
 /* The typewriter cursor effect */
 @keyframes blink-caret {
   from, to { border-color: transparent }
-  50% { border-color: rgb(27, 102, 118); }
+  50% { border-color: rgb(36, 125, 146); }
+}
+@media (min-width: 1024px){
+
+
+
+  .lg\:container{
+    width: 100%;
+  }
+
+
+
+  @media (min-width: 640px){
+
+
+
+    .lg\:container{
+      max-width: 640px;
+    }
+  }
+
+
+
+  @media (min-width: 768px){
+
+
+
+    .lg\:container{
+      max-width: 768px;
+    }
+  }
+
+
+
+  @media (min-width: 1024px){
+
+
+
+    .lg\:container{
+      max-width: 1024px;
+    }
+  }
+
+
+
+  @media (min-width: 1280px){
+
+
+
+    .lg\:container{
+      max-width: 1280px;
+    }
+  }
+
+
+
+  @media (min-width: 1536px){
+
+
+
+    .lg\:container{
+      max-width: 1536px;
+    }
+  }
 }
 .hover\:scale-110:hover{
   --tw-scale-x: 1.1;
   --tw-scale-y: 1.1;
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
+.hover\:text-\[\#2B8DA6\]:hover{
+  --tw-text-opacity: 1;
+  color: rgb(43 141 166 / var(--tw-text-opacity));
 }
 .hover\:text-fuchsia-700:hover{
   --tw-text-opacity: 1;
@@ -1336,6 +1404,12 @@ main, body {
   .md\:w-16{
     width: 4rem;
   }
+
+
+
+  .md\:flex-row{
+    flex-direction: row;
+  }
 }
 @media (min-width: 1024px){
 
@@ -1350,6 +1424,13 @@ main, body {
   .lg\:mx-0{
     margin-left: 0px;
     margin-right: 0px;
+  }
+
+
+
+  .lg\:mx-auto{
+    margin-left: auto;
+    margin-right: auto;
   }
 
 
@@ -1372,8 +1453,8 @@ main, body {
 
 
 
-  .lg\:min-w-\[60\%\]{
-    min-width: 60%;
+  .lg\:max-w-\[60\%\]{
+    max-width: 60%;
   }
 
 
@@ -1418,6 +1499,13 @@ main, body {
   .lg\:px-8{
     padding-left: 2rem;
     padding-right: 2rem;
+  }
+
+
+
+  .lg\:py-24{
+    padding-top: 6rem;
+    padding-bottom: 6rem;
   }
 
 
