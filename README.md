@@ -7,7 +7,7 @@ My personal, professional portfolio displaying my projects and experience as a F
 ## Deployed Website
 
 ### Screenshot 
-![Deployed Application](/public/images/DeployedScreenshot.png)
+![Deployed Application](/public/images/deployed-screenshot.png)
 ### URL
 [Chesney Julian's Portfolio](https://chesneyjulian-a6cc6bf5b71b.herokuapp.com/)
 ## Usage
@@ -17,5 +17,6 @@ My personal, professional portfolio displaying my projects and experience as a F
 - Within the "Recent Projects" sections, follow the "Case Study" link to read more about the process and content of each project. Follow the "GitHub Repository" link to view the project's contents on my GitHub account.
 - Click on project images, or on the "Visit the App" link within the case study to visit the deployed application, if applicable.
 ## Resources
-[Handlebarsjs](https://handlebarsjs.com/)
+[Handlebars js](https://handlebarsjs.com/)
+
 [Heroku](https://www.heroku.com/platform)
