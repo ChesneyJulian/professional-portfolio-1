@@ -1,59 +1,42 @@
-<main class="flex flex-col sm:flex-row justify-evenly self-center">
-
-    <div id="header"
-      class="isolate bg-gradient-to-bl from-[gray-900] via-[gray-900] overflow-hidden py-16 sm:py-20 min-h-screen">
-      <div class="hidden sm:absolute sm:-top-10 sm:right-1/2 sm:-z-10 sm:mr-10 sm:block sm:transform-gpu sm:blur-3xl"
-        aria-hidden="true">
-        <div
-          class="aspect-[1200/900] w-screen overflow-x-hidden bg-gradient-to-tr from-[#AF41ED] to-[#E713B0] via-[#E713B0] opacity-40"
-          style="clip-path: polygon(74.1% 44.1%, 100% 61.6%, 97.5% 26.9%, 85.5% 0.1%, 80.7% 2%, 72.5% 32.5%, 60.2% 62.4%, 52.4% 68.1%, 47.5% 58.3%, 45.2% 34.5%, 27.5% 76.7%, 0.1% 64.9%, 17.9% 100%, 27.6% 76.8%, 76.1% 97.7%, 74.1% 44.1%)">
-        </div>
-      </div>
-      <div
-        class="absolute -top-52 -z-10 -translate-x-1/2 transform-gpu blur-3xl sm:top-[-28rem] sm:ml-16 sm:translate-x-0 sm:transform-gpu"
-        aria-hidden="true">
-        <div class="aspect-[1200/900] w-screen overflow-x-hidden bg-gradient-to-tr from-[#AF41ED] to-[#E713B0] opacity-40"
-          style="clip-path: polygon(74.1% 44.1%, 100% 61.6%, 97.5% 26.9%, 85.5% 0.1%, 80.7% 2%, 72.5% 32.5%, 60.2% 62.4%, 52.4% 68.1%, 47.5% 58.3%, 45.2% 34.5%, 27.5% 76.7%, 0.1% 64.9%, 17.9% 100%, 27.6% 76.8%, 76.1% 97.7%, 74.1% 44.1%)">
-        </div>
-      </div>
-      <div class="mx-auto max-w-xl px-6 lg:px-8">
-        <div class="mx-auto max-w-2xl lg:mx-0">
-          <h2 class="my-6 text-2xl font-main-bold sm:text-5xl">{{name}}</h2>
-        </div>
-        <div class="mx-auto mt-16 max-w-2xl lg:mx-0 lg:max-w-none">
-          <div class="my-6 grid grid-cols-1 gap-x-8 gap-y-6 text-base font-main-normal">
-            {{#if url}}
-            <a class="text-slate-300 transform duration-300 hover:scale-110 hover:text-fuchsia-700" href="{{url}}" target="_blank">Visit the App</a>
-            {{/if}}
-            <a class="text-slate-300 transform duration-300 hover:scale-110 hover:text-fuchsia-700" href="{{github}}" target="_blank">Visit the GitHub Repository</a>
-            <a class="text-slate-300 transform duration-300 hover:scale-110 hover:text-fuchsia-700" href="/">Home</a>
-            
-            
+  <main class="flex flex-col justify-evenly self-center">
+    {{!-- make different nav for case studies --}}
+    {{>navigation}}
+    <div class="min-w-full flex flex-col items-center overflow-hidden py-16 sm:py-20 h-auto">
+      <div class="lg:container mx-4 lg:mx-auto max-w-auto lg:max-w-[70%] text-gray-200">
+        <div class="mx-2 lg:mx-0 px-8 py-16 lg:px-16 lg:py-24 bg-gray-800 rounded-lg mb-16">
+          <div class="mx-auto max-w-auto lg:mx-0 flex flex-col items-center md:flex-row md:justify-between md:items-center">
+            <div class="flex flex-col items-start">
+              <h2 class="mb-12 text-4xl font-main-bold sm:text-6xl">{{name}}</h2>
+              <a class="transform duration-300 hover:scale-110 text-[#83E2FB] hover:text-gray-200 " href="{{github}}">GitHub Repository <span aria-hidden="true">&rarr;</span></a>
+              {{#if url}}
+              <a class="transform duration-300 hover:scale-110 text-[#83E2FB] hover:text-gray-200" href="{{url}}">Visit the App <span aria-hidden="true">&rarr;</span></a>
+              {{/if}}
+            </div>
+            <img src="{{image}}" class="rounded aspect-square m-8 h-64 lg:h-80 object-cover object-top">
           </div>
         </div>
-        <div class="mx-auto mt-16 max-w-2xl lg:mx-0 flex flex-row justify-center">
-          <a target="_blank" {{#if url}} href="{{url}}" {{else}} href="{{github}}" {{/if}}><img src="{{image}}" class="transform duration-300 hover:scale-110 rounded aspect-square lg:h-80 object-cover object-top z-20"></a>
+        <div class="flex flex-col min-w-full my-32 px-8 py-4 lg:px-16 lg:py-8 border-x-4 border-gray-800 text-gray-800">
+            <h3 class="font-main-semi text-2xl sm:text-5xl">About the Project</h3>
+            <p class="my-8 font-main-normal text-xl sm:text-2xl leading-10">{{description}}</p>
         </div>
-      </div>
-    </div>
-    <div
-      class="z-20 container-fluid min-h-screen flex flex-col mt-8 sm:mt-24 scroll-mt-16 sm:scroll-mt-24 justify-between h-screen text-gray-200 scroll-smooth sm:overflow-y-auto no-scrollbar">
-      <div id="description" class="flex flex-col container mb-4 sm:mb-8 mx-auto p-6 lg:p-8">
-        <h3 class="font-main-semi text-2xl sm:text-5xl">About the Project</h3>
-        <p class="my-12 mx-4 sm:ml-16 font-main-normal text-xl sm:text-2xl max-w-2xl">{{description}}</p>
-      </div>
-      <div id="methods" class="flex flex-col container mb-8 mx-auto p-6 lg:p-8">
-        <h3 class="font-main-semi text-2xl sm:text-5xl">Methods</h3>
-        <p class="my-12 mx-4 sm:ml-16 font-main-normal text-xl sm:text-2xl max-w-2xl">{{methods}}</p>
-      </div>
-      <div id="skills-displayed" class="flex flex-col container mb-8 mx-auto  p-6 lg:p-8">
-        <h3 class="font-main-semi text-2xl sm:text-5xl pb-12">Skills Displayed</h3>
-          <ul class="list-disc my-12 mx-8 sm:ml-16 font-main-normal text-xl sm:text-2xl max-w-2xl">
+        <div class="flex flex-col min-w-full my-32 px-8 py-4 lg:px-16 lg:py-8 border-x-4 border-gray-800 text-gray-800">
+          <h3 class="font-main-semi text-2xl sm:text-5xl">Methods</h3>
+          <p class="my-8 font-main-normal text-xl sm:text-2xl leading-10">{{methods}}</p>
+        </div>
+        <div id="skills" class="flex flex-col min-w-full my-32 text-gray-800">
+          <div class="inline-flex items-center justify-center w-full pb-24">
+            <hr class="h-1 my-8 bg-gray-800 border-0 w-full">
+            <span class="absolute px-4 font-main-semi text-2xl sm:text-5xl bg-gray-200 -translate-x-1/2 left-1/2">Skills</span>
+          </div>
+          <div class="font-main-bold text-xl flex flex-col items-center">
+            <ul class="grid grid-rows-auto grid-cols-2 md:grid-cols-3 gap-4 text-center">
             {{#each skills as |skill| }}
-            <li>{{skill}}</li>
-            {{/each}}  
-          </ul>
+              <li class="m-4">{{skill}}</li>
+            {{/each}}
+            </ul>
+          </div>
         </div>
       </div>
     </div>
+
   </main>
