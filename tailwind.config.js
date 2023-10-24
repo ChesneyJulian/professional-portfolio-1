@@ -2,14 +2,11 @@
 module.exports = {
   content: {
     relative: true,
-    transform: (content) => content.replace(/taos:/g, ''),
-    files: ["./{views,public}/**/*.{handlebars,js}"],
+    // transform: (content) => content.replace(/taos:/g, ''),
+    files: ["./{views,public}/**/*.{handlebars,js}", "./node_modules/flowbite/**/*.js"],
   },
   theme: {
     extend: {
-      colors: {
-        'purple': '#37033A'
-      },
       screens: {
         'tablet': '640px',
       },
@@ -21,12 +18,14 @@ module.exports = {
     },
   },
   plugins: [
-    require('taos/plugin')
+    // require('taos/plugin')
+    require('flowbite/plugin')
+
   ],
-  safelist: [
-    '!duration-[0ms]',
-    '!delay-[0ms]',
-    'html.js :where([class*="taos:"]:not(.taos-init))'
-  ],
+  // safelist: [
+  //   '!duration-[0ms]',
+  //   '!delay-[0ms]',
+  //   'html.js :where([class*="taos:"]:not(.taos-init))'
+  // ],
 }
 
