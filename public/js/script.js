@@ -1,6 +1,5 @@
 
 const initializeApp = () => {
-  console.log('initialized');
   const hamburgerBtn = document.getElementById("hamburger-btn");
   const mobileNav = document.getElementById("mobile-nav");
 
